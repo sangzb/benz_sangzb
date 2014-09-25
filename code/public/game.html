@@ -1,0 +1,420 @@
+<!doctype html>  
+<html lang="en" style="height:100%;width:100%;">
+	<head>
+		<meta charset="utf-8">
+		<title>全新梅赛德斯-奔驰长轴距C级车 驾驭改变</title>
+		 <meta name="apple-mobile-web-app-capable" content="yes">
+    	 <meta name="apple-touch-fullscreen" content="yes">
+    	 <meta id="VIEWPORT" name="viewport" content="width=device-width,maximum-scale=1.0,minimal-ui">
+		 <link rel="stylesheet" href="css/reset.css">
+		 <link rel="stylesheet" href="css/main.css">
+		 <style type="text/css">
+		 	.default{position:absolute;width:100%;height:100%;top:0;left:0;}
+		 	#animatelayer{
+		 		-webkit-perspective: 1200px;
+			    -moz-perspective: 1200px;
+			    -ms-perspective: 1200px;
+			    -o-perspective: 1200px;
+			    perspective: 1200px;
+		 	}
+		 	.star{
+		 		position:absolute;
+		 		-webkit-transition: all 2s;
+		 		-webkit-transform:rotate(0deg);
+		 		top:37.45%;
+		 		left:17.6%;
+		 		width:0;
+		 	}
+		 	.staranimate{
+		 		-webkit-transform:rotate(1800deg);
+		 		top:15.17%;
+		 		left:7.75%;
+		 		width:19.4%;
+		 	}
+		 </style>
+    </head>           
+	<body style="height:100%;width:100%;background:#000 url('img/bg_l.jpg') no-repeat center center;background-size:auto 100%;">
+		<div id="outercon" style="height:100%;width:100%;position:absolute;top:0px;left:0px;">
+			<div id="loader" class="default" style="background:url('images/mobile/loadbg.jpg') no-repeat center center;background-size:100% auto;z-index:99;">
+				<div id="loadcon" style="width:100%;height:18.125%;background:url('images/mobile/load.png') no-repeat center center;background-size:auto 100%;position:absolute;left:0;top:30%;">
+					<div id="innercover" style="position:absolute;right:0;top:0;width:100%;height:100%;background-color:black;"></div>
+				</div>
+				<div id="loadpercentcon" style="width:100%;height:20px;position:absolute;top:48%;left:0;text-align:center;color:#fff;"></div>
+			</div>
+			<div id="maincon" style="overflow:hidden;display:none;">
+				<img id="logo" src="img/logo.png" style="width:31.86%;position:absolute;top:4.68%;right:2%;z-index:99999;"/>
+				<img id="logotext" src="img/logotext.png" style="width:9.45%;position:absolute;top:6.55%;left:2%;z-index:99999;"/>
+				<div id="test123" style="position:absolute;top:100px;left:200px;z-index:9999;"></div>
+				<canvas id="canvas"></canvas>
+				<!--开始界面-->
+				<div id="pregage" style="z-index:999;display:block;text-align:center;background:url('img/cover.jpg') no-repeat center center;background-size:100% auto;">
+					<div id="beginbtn" style="position:absolute;width:28.48%;height:16.32%;left:6.4%;top:57.82%;"></div>
+				</div>
+				<div id="animatelayer" class="default" style="z-index:2;display:none;"></div>
+				<!--标题界面-->
+				<div id="tipcon" class="default" style="background-position:center center;background-repeat:no-repeat;background-size:100% auto;opacity:0;display:none;">
+					<img id="routecursor" src="img/game/pointer.png" style="width:8.7%;position:absolute;left:2%;top:27.21%;"/>
+					<div id="timmercon" style="position:absolute;width:27.46%;height:17.41%;background:url('img/game/timer.png');left:36.27%;top:41%;background-size:100%;">
+						<canvas id="timmer" style="position:absolute;"></canvas>
+					</div>
+				</div>
+				<!--划线界面-->
+				<div class="routecon" style="z-index:2">
+					<div id="opacitybg" class="default" style="z-index:99;background:no-repeat center center;background-size:100% auto;"></div>
+					<img class="halo" src="img/halo.png" style="z-index:99;"/> 
+					<canvas id="myCanvas" style="background-color:transparent;z-index:999;display:none;" oncontextmenu="return false;"></canvas>
+					<div id="rtcon1" style="position:absolute;height:15.73%;width:22.18%;bottom:1%;left:22%;background:url('img/game/timebg.png') no-repeat center center;background-size:100% 100%;text-align:center;z-index:9999;font-size:1em;"></div>
+					<div style="position:absolute;height:15.73%;width:32.75%;bottom:1%;left:45.25%;background:url('img/game/gametip.png') no-repeat center center;background-size:100% 100%;z-index:9999;"></div>
+				</div>
+				<!--统计界面-->
+				<div id="productlayer" class="default" style="z-index:2;display:none;">
+					<div id="innerprolayer" class="default" style="z-index;1;background:no-repeat center center;background-size:100% auto;">
+						<!--准确-->
+						<div id="accuracycon" style="position:absolute;width:7.04%;height:9.52%;left:14.7%;top:30.95%;font-size:0.8em;"></div>
+						<!--时间-->						
+						<div id="timecalccon" style="position:absolute;width:7.52%;height:9.52%;left:27.3%;top:30.95%;font-size:0.8em;"></div>
+						<div id="scorecon" style="position:absolute;width:19.2%;height:13.6%;left:16%;top:42.5%;">
+							
+						</div>
+						<!--分享-->
+						<div id="wechatshare" style="position:absolute;width:13.44%;height:14.28%;left:6.4%;top:79.93%;"></div>
+						<!--继续-->
+						<div id="continuebtn" style="position:absolute;width:28.48%;height:15.98%;left:6.4%;top:60.2%;"></div>
+						<!--重玩-->
+						<div id="replaybtn" style="position:absolute;width:13.44%;height:14.28%;left:21.44%;top:79.93%;"></div>
+						<!--负分 -->
+						<div id="failedcon" style="position:absolute;background:url('img/game/failedbg.jpg') no-repeat center center;background-size:100% 100%;width:40.48%;height:71.22%;bottom:0;left:0;display:none;" ></div>
+					</div>
+					
+				</div>
+				<!--预约界面-->
+				<div id="ondcon" class="default" style="z-index:4;background:url('img/formbg.jpg') no-repeat center center;background-size:100% auto;display:none;">
+					<div id="formtip" style="z-index:999;position:absolute;width:44%;height:33%;left:28%;top:33%;display:none;background:url('img/popupcon.png') no-repeat center center;background-size:100% 100%;color:#fff;">
+						<div class="tiptxt" style="width:100%;text-align:center;margin-top:10%;"></div>
+					</div>
+					<!--private info-->
+					<!--<a href="http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/orivacy_statement.ngrb.html" target="_blank" style="position:absolute;width:10%;height:7%;left:40.6%;top:66%;"></a>-->
+					<!--close-->
+					<img id="formclose" style="position:absolute;right:2%;top:28%;" src="img/close.png" width="35"/>	
+					<!--name-->
+					<input type="text" id="uname" name="uname" style="position:absolute;width:24%;height:9%;left:21%;top:40.76%;color:#fff;background:none;border:none;"/>
+					<!--mobile-->
+					<input type="text" id="mobile" name="mobile" style="position:absolute;width:25%;height:9%;left:65.5%;top:56%;color:#fff;background:none;border:none;"/>
+					<!--province-->
+					<select id="province" name="province" style="position:absolute;left:21.12%;top:54.4%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;"></select>
+					<!--city-->
+					<select id="city" name="city" style="position:absolute;left:34.68%;top:54.4%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;"></select>
+					<!--sex radio-->
+					<img id="sexmale" src="img/btnrd_s.png" style="position:absolute;top:41.5%;left:65.5%"/>
+					<img id="sexfemale" class="" src="img/btnrd_u.png" style="position:absolute;top:41.5%;left:76.5%"/>
+					<input id="sex" type="hidden" name="sex" value="1" />
+					<!--submit button-->
+					<input id="submitbtn" type="button" value="" style="position:absolute;width:48%;height:13.5%;left:8.5%;top:82%;opacity:0;"/>
+					<!--reset button-->
+					<input id="resetbtn" type="button" style="position:absolute;width:33%;height:13.5%;left:58%;top:82%;opacity:0;"/>
+				</div>
+				<!--结束界面-->
+				<div id="resultcon" class="default" style="z-index:3;background:url('img/game/resultbg.jpg') no-repeat center center;background-size:100% auto;display:none;">
+					<img src="img/transparent.png" class="star"/>
+					<div id="totalscore" style="position:absolute;width:15.52%;height:17%;left:39.68%;top:23.8%;color:#fff;font-size:2em;"></div>
+					<div id="perper" style="position:absolute;width:5.12%;height:9.18%;left:46.4%;top:45.57%;color:#0099ff;"></div>
+					
+					<div id="wechatshare1" style="position:absolute;width:52.8%;height:15.64%;left:6.5%;top:60.2%;"></div>
+					<div id="playagainbtn" style="position:absolute;width:25.6%;height:15.64%;left:6.5%;top:80.27%;"></div>
+					<div id="ondbtn" style="position:absolute;width:25.6%;height:15.64%;left:35.5%;top:80.27%;"></div>
+				</div>
+				<!--分享提示-->
+				<div id="sharetip" class="default" style="background:url('img/game/share_tip.png') no-repeat center center;background-size:100% auto;display:none;z-index:99999"></div>
+			</div>
+		</div>
+	  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  <script type="text/javascript" src="js/jquery.easing.js"></script>
+	  <script src="js/socket.io.min.js"></script>  
+	  <script type="text/javascript" src="js/dollar_benz_game.js"></script>
+	  <script type="text/javascript" src="js/cities.js"></script>
+	  <script type="text/javascript" src="js/game.js"></script>
+	  <script type="text/javascript">
+	  	$("body").bind("touchmove",function(e){e.stopPropagation();e.preventDefault();});
+		//屏幕适配			
+		var posmapping={"1":38.75,"2":35,"3":40.3,"4":81.875,"5":54.375}
+		var mapping={"1":"benz_z","2":"benz_e","3":"benz_v","4":"benz_o","5":"benz_eee3"};
+		var result="";
+		var _isDown, _points, _r, _g, _rc,_st=0,_et=0;
+		function onLoadEvent(){
+			_points = new Array();
+			_r = new DollarRecognizer();
+	
+			var canvas = document.getElementById('myCanvas');
+			canvas.setAttribute("width",$("#outercon").width());
+			canvas.setAttribute("height",$("#outercon").height());
+			canvas.style.display="block";
+			_g = canvas.getContext('2d');
+			
+			_g.fillStyle = "rgba(65,201,248,1)";
+			_g.strokeStyle = "rgba(65,201,248,1)";
+			_g.lineWidth = 6;
+			_g.font = "16px Gentilis";
+			_rc = getCanvasRect(canvas); 
+			_g.clearRect(0, 0, _rc.width, _rc.height);
+			_g.shadowBlur = 0;
+						//_g.shadowColor = "white";
+			_isDown = false;
+			$("body").bind("touchmove",function(e){e.preventDefault();})
+		}							
+		function getCanvasRect(canvas){	
+			//监测代码
+			if(ci==1){
+				_smq.push(['custom','产品点体验','产品点体验_产品点1_M']);
+			}
+			if(ci==2){
+				_smq.push(['custom','产品点体验','产品点体验_产品点2_M']);
+			}
+			if(ci==3){
+				_smq.push(['custom','产品点体验','产品点体验_产品点3_M']);
+			}		
+			if(ci==4){
+				_smq.push(['custom','产品点体验','产品点体验_产品点4_M']);
+			}
+			if(ci==5){
+				_smq.push(['custom','产品点体验','产品点体验_产品点5_M']);
+			}						
+			var w = canvas.width;
+			var h = canvas.height;
+			var cx = canvas.offsetLeft;
+			var cy = canvas.offsetTop;
+			while (canvas.offsetParent != null){
+				canvas = canvas.offsetParent;
+				cx += canvas.offsetLeft;
+				cy += canvas.offsetTop;
+			}
+			return {x: 0, y: 0, width: w, height: h,mx:parseInt($("#outercon").css("left")),my:parseInt($("#outercon").css("top"))};
+		}
+	
+		var halo=$(".halo");
+		var renderh=null;
+		function mouseDownEvent(e){
+			//start time
+			//_st=(new Date()).valueOf();
+			var event=e.originalEvent.changedTouches[0];
+			var x=event.clientX;
+			var y=event.clientY;
+			document.onselectstart = function() { return false; } // disable drag-select
+			document.onmousedown = function() { return false; } // disable drag-select
+			_isDown = true;
+			x -= (_rc.x+_rc.mx);
+			y -= (_rc.y+_rc.my);
+			if (_points.length > 0)
+				_g.clearRect(0, 0, _rc.width, _rc.height);
+			_points.length = 1; // clear
+			_points[0] = new Point(x, y);
+			
+			halo.css({"left":x-Math.round(halo.width()/2),"top":y-Math.round(halo.height()/2),"opacity":1}).show();
+			$("#routetip").hide();
+	
+			renderh=setInterval(function(){
+				var lng=_points.length;
+				for(var i=1;i<lng;i++){
+					var _p=_points[i];
+					_g.beginPath();
+		            _g.moveTo(_p.X, _p.Y)
+		            _g.arc(_p.X, _p.Y, 0.5, 0, Math.PI * 2, true);
+		            _g.closePath();
+		            _g.stroke();
+				}
+			},0);
+		}	
+		$("#myCanvas").bind("touchstart",mouseDownEvent);
+		function mouseMoveEvent(e){
+			var event=e.originalEvent.changedTouches[0];
+			var x=event.clientX;
+			var y=event.clientY;
+			//halo
+			halo.css({"left":x-_rc.mx-Math.round(halo.width()/2),"top":y-_rc.my-Math.round(halo.height()/2)}).show();
+			if (_isDown)
+			{
+				x -= (_rc.x+_rc.mx);
+				y -= (_rc.y+_rc.my);
+				_points.push({X:x,Y:y})
+				drawConnectedPoint();
+			}
+		}
+		$("#myCanvas").bind("touchmove",mouseMoveEvent);
+		function mouseUpEvent(e){
+			if(renderh){
+				clearInterval(renderh);
+			}
+			//endtime
+			_et=(new Date()).valueOf();
+			
+			var event=e.originalEvent.changedTouches[0];
+			var x=event.clientX;
+			var y=event.clientY;
+			document.onselectstart = function() { return true; } // enable drag-select
+			document.onmousedown = function() { return true; } // enable drag-select
+			if (_isDown){
+				_isDown = false;
+				result = _r.Recognize(_points, false);
+				halo.animate({"opacity":0});					
+				_g.clearRect(0, 0, _rc.width, _rc.height);
+				_g.shadowBlur = 0;
+				_g.shadowColor = "white";
+				var lng=_points.length;
+				var _rrr=""
+				for(var i=1;i<lng;i++){
+					
+					var _p=_points[i];
+					//_rrr+=",new Point("+_p.X+","+_p.Y+")";
+					_p.angle=Math.round(Math.random()*360);
+					var _p1=_points[i-1];
+					
+					_g.beginPath();
+		            _g.moveTo(_p.X, _p.Y)
+		            _g.arc(_p.X, _p.Y, 0.5, 0, Math.PI * 2, true);
+		            _g.closePath();
+		            _g.stroke();
+		            
+		            
+		            _g.beginPath();
+		            _g.moveTo(_p.X, _p.Y)
+					_g.lineTo(_p1.X, _p1.Y);
+					_g.closePath();
+					_g.stroke();
+				}	
+				//console.log(_rrr)				
+				efi=0;
+				efi=true;
+				shadow=0;
+				ll=0;
+				if(rthandler){
+					clearInterval(rthandler);
+				}
+				shadowHandler=setInterval(shadowanimate,0);
+				productbgfunc();
+			}
+		}
+		$("#myCanvas").bind("touchend",mouseUpEvent);
+		var efi=false;
+		
+		
+		function drawConnectedPoint()
+		{
+			 var _p=_points[(_points.length-2)]
+			 if(_p){
+			 	_g.beginPath();
+	            _g.moveTo(_p.X, _p.Y)
+				_g.lineTo(_points[(_points.length-1)].X, _points[(_points.length-1)].Y);
+				_g.closePath();
+				_g.stroke();
+			 }
+		}
+		
+		
+		
+		//参加预售
+		$("#ondbtn").click(function(){
+			$("#resetbtn").trigger("click");
+			$("#ondcon").css("left",-THISW).show().animate({"left":0},{duration:2000,easing:"easeOutBounce",complete:function(){
+				$("#formclose").unbind().click(function(){
+					$("#ondcon").css("left",0).show().animate({"left":-THISW},{duration:2000,easing:"easeOutBounce",complete:function(){$("#ondcon").hide()}});
+				})
+			}})
+		});
+		var reqPhone = /^0?(13[0-9]|17[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+	    var $username=$('#uname').blur(function(){$(window).scrollTop(0)});
+	    var $province=$('#province').blur(function(){$(window).scrollTop(0)});
+	    var $city=$('#city').blur(function(){$(window).scrollTop(0)});
+	    var $phone=$('#mobile').blur(function(){$(window).scrollTop(0)});
+		//form submit
+		$("#submitbtn").bind("click",function(){
+	        if($username.val()==''){
+	            $username[0].focus();
+	            $(".tiptxt",$("#formtip").show()).html("用户名不能为空！");
+	            return false;
+	        }else if($province.val()=='省份'){
+	            $province[0].focus();
+	            $(".tiptxt",$("#formtip").show()).text("请选择省份！");
+
+	            return false;
+	        }else if($city.val()=='市/区'){
+	            $city[0].focus();
+	             $(".tiptxt",$("#formtip").show()).text("请选择城市！");
+	            return false;
+	        }else if($phone.val()==""|| !reqPhone.test($phone.val())){
+	            $phone[0].focus();
+	            $(".tiptxt",$("#formtip").show()).text("请输入合法的手机号码！");
+	            return false;
+	        }else{
+	        	//_smq.push(['custom','参加预售_提交_M',$username.val(),$phone.val()]);
+				var data = {username:$username.val(),province:$province.val(),city:$city.val(),phone:$phone.val(),gender:$("#sex").val()?"男":"女",source:'mobile-launch',callback:'callback'};
+				//_smq.push(['custom','填写信息_提交',$username.val(),$phone.val()]);
+				var url = 'http://special.mercedes-benz.com.cn/NewC-Class/pre-sale/deal_jsonp.php';
+				$.ajax({
+					type: "POST",
+					url: url,
+					data: data,
+					dataType: "jsonp",
+					success: function(data){
+						if(data.code==1){
+							
+						}else{
+							alert(data.msg);
+						}
+					}
+				});
+	        }
+		});
+		$("#formtip").unbind().click(function(){
+			$(this).hide();
+		});
+		
+		$("#sexmale").bind("click",function(){
+			this.src="img/btnrd_s.png";
+			$("#sexfemale").attr("src","img/btnrd_u.png")
+			$("#sex").attr("value",1);
+		});
+		$("#sexfemale").bind("click",function(){
+			this.src="img/btnrd_s.png";
+			$("#sexmale").attr("src","img/btnrd_u.png")
+			$("#sex").attr("value",0);
+		});
+		function callback(res){
+			if(res.code){
+				$("body").css({"background-image":"url('img/bg_l.jpg')"});
+				var name=$('#uname').val()
+				var phone=$("#mobile").val()
+				//_smq.push(['custom','参加预售_提交_M',name,phone]);
+				$("#formtip .tiptxt").text("提交成功");
+				$("#formtip").show().unbind().click(function(){
+					$("#ondcon").css("left",0).show().animate({"left":-THISW},{duration:2000,easing:"easeOutBounce",complete:function(){$("#ondcon").hide()}})
+					$(this).hide();
+				});
+			}else{
+				$("#formtip .tiptxt").text("请重新提交");
+			}
+		}
+		//reset
+		$("#resetbtn").bind("click",function(){
+			$("#uname,#mobile").attr("value","");
+			$("#province option").first().attr("selected",true);
+			$("#city option").first().attr("selected",true);
+			$("#sexmale").trigger("click");
+		});
+		
+		
+		
+	  </script>
+   <script type="text/javascript">
+		var _smq = _smq || [];
+		_smq.push(['_setAccount', '29b8452', new Date()]);
+		_smq.push(['_setDirectoryIndex', 'index.html']);
+		_smq.push(['_setReferrerSmtEnabled', 'yes']);
+		_smq.push(['pageview']);
+		
+		(function() {
+		var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+		sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/collect.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+		})();
+	</script>
+</body>
+</html>

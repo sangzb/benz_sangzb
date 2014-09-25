@@ -1,0 +1,193 @@
+<!doctype html>  
+<html lang="en" style="height:100%;width:100%;">
+	<head>
+		<meta charset="utf-8">
+		<title>全新梅赛德斯-奔驰长轴距C级车 一驾驭改变</title>
+		 <meta name="apple-mobile-web-app-capable" content="yes">
+		 <meta name="apple-touch-fullscreen" content="yes">
+		 <meta id="VIEWPORT" name="viewport" content="width=device-width,maximum-scale=1.0,minimal-ui">
+		 <link rel="stylesheet" href="css/reset.css">
+			<style type="text/css">
+				.default{position:absolute;width:100%;height:100%;top:0;left:0}
+				#productcon .kvitem{float:left;height:100%;position:relative;background-repeat:center;background-position:center center;background-size:100% auto;}
+			</style>
+		 
+	</head>           
+	<body style="height:100%;width:100%;background:#000 url('images/mobile/bg.jpg') no-repeat center center;background-size:100% auto;">
+		<div id="main" class="default" style="overflow:hidden;">
+			<img src="img/logotext.png" class="imgdefault" style="position:absolute;width:8.5%;top:6%;left:2%;z-index:99"/>
+			<img src="img/logo.png" class="imgdefault" style="position:absolute;width:29.5%;top:6%;right:2%;z-index:99;"/>
+			<img id="menubtn" src="images/mobile/menubtn.png"  style="position:absolute;width:8.18%;bottom:0%;right:0;z-index:99;"/>
+			<div id="loader" class="default" style="background:url('images/mobile/loadbg.jpg') no-repeat center center;background-size:100% auto;">
+				<div id="loadcon" style="width:100%;height:18.125%;background:url('images/mobile/load.png') no-repeat center center;background-size:auto 100%;position:absolute;left:0;top:30%;">
+					<div id="innercover" style="position:absolute;right:0;top:0;width:100%;height:100%;background-color:black;"></div>
+				</div>
+				<div id="loadpercentcon" style="width:100%;height:20px;position:absolute;top:48%;left:0;text-align:center;color:#fff;"></div>
+			</div>
+			<div id="menu" class="default" style="z-index:999;display:none;">
+				<div style="position:absolute;width:100%;height:81.65%;left:0;bottom:0;background:url('images/mobile/menubg.png') no-repeat center center;background-size:100% 100%;">
+					<div id="pro_all" style="position:absolute;width:100%;height:27.5%;top:0;left:0;"></div>
+					<div id="pro_1" style="position:absolute;width:16.67%;height:22.9%;top:27.5%;left:0;"></div>
+					<div id="pro_2" style="position:absolute;width:16.67%;height:22.9%;top:27.5%;left:16.67%;"></div>
+					<div id="pro_3" style="position:absolute;width:16.67%;height:22.9%;top:27.5%;left:33.33%;"></div>
+					<div id="pro_4" style="position:absolute;width:16.67%;height:22.9%;top:27.5%;left:50%;"></div>
+					<div id="pro_5" style="position:absolute;width:16.67%;height:22.9%;top:27.5%;left:66.66%"></div>
+					<div id="pro_6" style="position:absolute;width:16.67%;height:22.9%;top:27.5%;left:83.33%"></div>
+					
+					
+					<div id="config" style="position:absolute;width:25%;height:27.5%;top:50.4%;left:0%;"></div>
+					<div id="ond" style="position:absolute;width:25%;height:27.5%;top:50.4%;left:25;"></div>
+					<div id="tvc" style="position:absolute;width:25%;height:27.5%;top:50.4%;left:50%;"></div>
+					<div id="launch" style="position:absolute;width:25%;height:27.5%;top:50.4%;left:75%;"></div>
+					
+					<div id="returnbtn" style="position:absolute;width:12.85%;height:21.33%;bottom:0;left:0;"></div>
+					<div id="querybtn" style="position:absolute;width:17.6%;height:21.33%;bottom:0;right:12.06%;"></div>
+					<div id="sharebtn" style="position:absolute;width:12.06%;height:21.33%;bottom:0;right:0;"></div>
+				</div>
+			</div>
+			<div id="productindtro" class="default" style="display:none;">
+				<!--<canvas id="productcanvas" style="position:absolute;top:0;left:0;z-index:1"></canvas>-->
+				<div id="productcon" class="default" style="z-index:2;overflow:hidden;">
+					<ul style="width:100%;height:100%;list-style:none;">
+                    	<li class="kvitem">
+                    		<img src="images/mobile/slidertip.png" style="position:absolute;width:13.82%;right:0px;top:41.1%"/>
+                    		<img src="images/mobile/t1.png" style="position:absolute;left:2%;top:17.6%;width:36%;" />
+                    	</li>
+				        <li class="kvitem">
+				        	<img src="images/mobile/t2.png" style="position:absolute;left:2%;top:17.6%;width:54.66%;" />
+				        </li>
+				        <li class="kvitem">
+				        	<img src="images/mobile/t3.png" style="position:absolute;left:2%;top:17.6%;width:50.88%;" />
+				        </li>
+				        <li class="kvitem">
+				        	<img src="images/mobile/t4.png" style="position:absolute;left:2%;top:17.6%;width:47.18%;" />
+				        </li>
+                        <li class="kvitem">
+                        	<img src="images/mobile/t5.png" style="position:absolute;left:2%;top:17.6%;width:45.24%;" />
+                        </li>
+				        <li class="kvitem">
+				        	<img src="images/mobile/t6.png" style="position:absolute;left:2%;top:17.6%;width:57.13%;" />
+				        </li>
+				        <li class="kvitem">
+				        	<img src="images/mobile/t7.png" style="position:absolute;left:2%;top:17.6%;width:44.01%;" />
+				        </li>
+				        <li class="kvitem">
+				        	<img src="images/mobile/t8.png" style="position:absolute;left:2%;top:17.6%;width:36%;" />
+				        	<img src="images/mobile/btn.png" style="position:absolute;width:49.64%;left:47.88%;top:17.6%;">
+				        	<div id="replaybtn" style="position:absolute;width:24.82%;height:12.23%;left:47.88%;top:17.6%"></div>
+				        	<div id="testbtn" style="position:absolute;width:24.82%;height:12.23%;left:73.06%;top:17.6%"></div>
+				        </li>
+				    </ul>	
+				</div>
+			</div>
+			<!--预约试驾-->
+			<div id="ondcon" class="default" style="display:none;opacity:0;">
+				<div id="formtip" style="z-index:999;position:absolute;width:44%;height:39.9%;left:28%;top:33%;display:none;background:url('img/popupcon.png') no-repeat center center;background-size:100% 100%;color:#fff;">
+					<div class="tiptxt" style="width:100%;text-align:center;margin-top:10%;"></div>
+				</div>
+				<div style="width:96%;height:81.5%;position:absolute;bottom:0;left:2%;background:url('images/mobile/formbg.jpg') no-repeat center center;background-size:100% 100%;">
+					<!--name-->
+					<input type="text" id="uname" name="uname" style="position:absolute;width:26.3%;height:12.2%;left:19.8%;top:31.2%;color:#666;background:none;border:none;"/>
+					<!--mobile-->
+					<input type="text" id="mobile" name="mobile" style="position:absolute;width:26.3%;height:12.2%;left:66.6%;top:48.7%;color:#666;background:none;border:none;"/>
+					<!--province-->
+					<select id="province" name="province" style="position:absolute;left:19.8%;top:48.7%;width:12.1%;height:12.2%;color:#666;background:none;border:none;"></select>
+					<!--city-->
+					<select id="city" name="city" style="position:absolute;left:34%;top:48.7%;width:12.1%;height:12.2%;color:#666;background:none;border:none;"></select>
+					<!--sex radio-->
+					<img id="sexmale" src="images/mobile/sexsel.jpg" style="position:absolute;top:33.1%;left:66.57%;width:3%;"/>
+					<img id="sexfemale" src="images/mobile/sexcom.jpg" style="position:absolute;top:33.1%;left:77.8%;width:3%;"/>
+					<input id="sex" type="hidden" name="sex" value="1" />
+					<!--submit button-->
+					<input id="submitbtn" type="button" style="position:absolute;width:50.32%;height:17.24%;left:6.65%;top:80.96%;opacity:0;"/>
+					<!--reset button-->
+					<input id="resetbtn"  type="button" style="position:absolute;width:35.55%;height:17.24%;left:5863%;top:80.96%;opacity:0;"/>
+					<!--private info protection-->
+					<a href="#" class="default" target="_blank" style="width:7%;height:6%;left:29.27%;top:49.5%"></a>
+				</div>
+			</div>
+			
+			<!--视频-->
+			<!--参数-->
+			<div id="configcon" class="default" style="display:none;opacity:0;">
+				<div style="position:absolute;width:95%;height:81.5%;bottom:0;left:2.5%;background:url('images/mobile/config.jpg') no-repeat center center;background-size:100% 100%;"></div>
+			</div>
+			<!--直播页面-->
+			<div class="default" style="display:none;">
+				<iframe id="launchlive" src="#" border="none" scrolling="no" style="border:none;"></iframe>
+			</div>
+			<!--倒计时-->
+			<style type="text/css">
+				#timercon .left{position:absolute;width:35%;height:70%;left:15%;top:30%;}
+				#timercon .front{z-index:2;}
+				#timercon .right{position:absolute;width:35%;height:70%;right:15%;top:30%;}
+				#timercon .back{z-index:1;opacity:0;}
+				#timercon .num{background-size:auto 100%;width:100%;height:25px;position:absolute;background-repeat:no-repeat;background-position:center center;}
+				#timercon .num1{background-image:url("images/mobile/num1.png");}
+				#timercon .num2{background-image:url("images/mobile/num2.png");}
+				#timercon .num3{background-image:url("images/mobile/num3.png");}
+				#timercon .num4{background-image:url("images/mobile/num4.png");}
+				#timercon .num5{background-image:url("images/mobile/num5.png");}
+				#timercon .num6{background-image:url("images/mobile/num6.png");}
+				#timercon .num7{background-image:url("images/mobile/num7.png");}
+				#timercon .num8{background-image:url("images/mobile/num8.png");}
+				#timercon .num9{background-image:url("images/mobile/num9.png");}
+				#timercon .num0{background-image:url("images/mobile/num0.png");}
+			</style>
+			<div id="timercon" class="default" style="background:url('images/mobile/timerbg.jpg') no-repeat center center;background-size:100% auto;display:none;">
+				<div id="hourcon" class="default" style="width:8.7%;height:13.28%;left:67.2%;top:40%">
+					<div class="left front">
+						<div class="num"></div>
+					</div>
+					<div class="left back">
+						<div class="num"></div>
+					</div>
+					<div class="right front">
+						<div class="num"></div>
+					</div>
+					<div class="right back">
+						<div class="num"></div>
+					</div>
+				</div>
+				<div id="mincon" class="default" style="width:8.7%;height:13.28%;left:77.6%;top:40%">
+					<div class="left front">
+						<div class="num"></div>
+					</div>
+					<div class="left back">
+						<div class="num"></div>
+					</div>
+					<div class="right front">
+						<div class="num"></div>
+					</div>
+					<div class="right back">
+						<div class="num"></div>
+					</div>
+				</div>
+				<div id="seccon" class="default" style="width:8.7%;height:13.28%;left:88.4%;top:40%">
+					<div class="left front">
+						<div class="num"></div>
+					</div>
+					<div class="left back">
+						<div class="num"></div>
+					</div>
+					<div class="right front">
+						<div class="num"></div>
+					</div>
+					<div class="right back">
+						<div class="num"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jgestures.min.js"></script>
+		<script type="text/javascript" src="js/cities.js"></script>
+		<script type="text/javascript" src="js/jquery.event.move.js"></script>
+		<script type="text/javascript" src="js/unslider.min.js"></script>
+		<script type="text/javascript" src="js/mobile.js"></script>
+		
+	</body>
+</html>

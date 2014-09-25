@@ -1,0 +1,15 @@
+{
+  "verbose": true,
+  "ignore": ["node_modules/*"],
+  "execMap": {    
+  },
+  "watch": [
+    "*.js",
+    "public/*",
+    "views/*"    
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js json"
+}

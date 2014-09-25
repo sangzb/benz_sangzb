@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<video>
+		<item><![CDATA[tvc45s.flv]]></item>
+	</video>
+	<awd>
+		<car><![CDATA[resource/awd/car.awd]]></car>
+	</awd>
+	<mp3>
+		<bg><![CDATA[resource/mp3/bg.mp3]]></bg>
+	</mp3>
+	<foot>
+		<link>
+			<item><![CDATA[http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/passengercars.flash.skipintro.html*]]></item>
+			<item><![CDATA[http://contact.mercedes-benz.com.cn/dealer_cn.html*]]></item>
+			<item><![CDATA[http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/orivacy_statement.ngrb.html*]]></item>
+			<item><![CDATA[http://www.miibeian.gov.cn*]]></item>
+			<item><![CDATA[http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/legal_notice.ngrb.html*]]></item>
+		</link>
+		<share>
+			<title><![CDATA[互联时代，奔驰邀你体验不一样的！创新双屏互动，刷新你的感官体验！驾驭改变！全新梅赛德斯-奔驰长轴距C级车，预售现已开启！C you soon! http://special.mercedes-benz.com.cn/NewC-Class/]]></title>
+			<image><![CDATA[]]></image>
+		</share>
+	</foot>
+	<back><![CDATA[http://special.mercedes-benz.com.cn/NewC-Class/]]></back>
+</data>

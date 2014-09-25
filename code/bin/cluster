@@ -1,0 +1,62 @@
+#!/usr/bin/env node
+//process.env.NODE_ENV = 'production';
+console.log(process.env.NODE_ENV);
+//set up cluster
+var cluster = require('cluster');
+var numCPUs = require('os').cpus().length-1;
+
+var debug = require('debug')('code');
+if(cluster.isMaster)
+{
+  console.log("Master Process Started,PID:"+process.pid);
+  // Fork workers.
+  for (var i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
+  cluster.on('exit', function(worker, code, signal) {
+    console.log('worker ' + worker.process.pid + ' died');
+    cluster.fork();
+  });
+}
+else
+{
+  var app = require('../app');
+  var io = require('../sioserver');
+  var redis = require('socket.io-redis');
+  //add redis support
+  io.adapter(redis({ host: 'localhost', port: 6379 }));
+  app.set('env', "production");
+  app.set('port', process.env.PORT || 80);
+
+  var server = app.listen(app.get('port'), function() {
+    debug('Express server listening on port ' + server.address().port);
+  });
+  io.attach(server);
+  console.log("Worker Process Started,PID:"+process.pid);
+  
+}
+
+
+/*
+var cluster = require('cluster');
+var http = require('http');
+var numCPUs = require('os').cpus().length;
+
+if (cluster.isMaster) {
+  // Fork workers.
+  for (var i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
+
+  cluster.on('exit', function(worker, code, signal) {
+    console.log('worker ' + worker.process.pid + ' died');
+  });
+} else {
+  // Workers can share any TCP connection
+  // In this case its a HTTP server
+  http.createServer(function(req, res) {
+    res.writeHead(200);
+    res.end("hello world\n");
+  }).listen(8000);
+}
+*/

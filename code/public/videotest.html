@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html5 capture test</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    	 <meta name="apple-touch-fullscreen" content="yes">
+    	 <meta id="VIEWPORT" name="viewport" content="width=device-width,maximum-scale=1.0,minimal-ui">
+
+</head>
+<body>
+	<script type="text/javascript" src="swfobject.js"></script>
+    <script type="text/javascript" src="youku-cms.js"></script>
+   <script type="text/javascript">
+       window.checkDevice=function (channel, divName, playerWidth, playerHeight){
+           var pda_user_agent_list = new Array("2.0 MMP", "240320", "AvantGo", "BlackBerry", "Blazer",
+                   "Cellphone", "Danger", "DoCoMo", "Elaine/3.0", "EudoraWeb", "hiptop", "IEMobile", "KYOCERA/WX310K", "LG/U990",
+                   "MIDP-2.0", "MMEF20", "MOT-V", "NetFront", "Newt", "Nintendo Wii", "Nitro", "Nokia",
+                   "Opera Mini", "Opera Mobi",
+                   "Palm", "Playstation Portable", "portalmmm", "Proxinet", "ProxiNet",
+                   "SHARP-TQ-GX10", "Small", "SonyEricsson", "Symbian OS", "SymbianOS", "TS21i-10", "UP.Browser", "UP.Link",
+                   "Windows CE", "WinWAP", "Androi", "iPhone", "iPod", "iPad", "Windows Phone", "HTC");
+           var pda_app_name_list = new Array("Microsoft Pocket Internet Explorer");
+           var user_agent = navigator.userAgent.toString();
+           for (var i = 0; i < pda_user_agent_list.length; i++) {
+               if (user_agent.indexOf(pda_user_agent_list[i]) >= 0) {
+                   document.getElementById(divName).innerHTML='<video id="youku-html5-player-video" width="'+playerWidth+'" height="'+playerHeight+'" controls="controls" autoplay="autoplay"><source src="http://l.youku.com/getm3u8/channel/'+channel+'.m3u8"></video>';
+                   return false;
+               }
+           }
+           // output pc
+           Youku.loadLivePlayer(channel, divName, playerWidth, playerHeight); //直播播放器
+           return false;
+       };
+   </script>
+   <div id="playerBox"></div>
+   <script>
+       checkDevice(122,"playerBox","568","320");
+   </script>
+</body>
+</html>

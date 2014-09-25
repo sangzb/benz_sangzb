@@ -1,0 +1,63 @@
+/**
+ * @author Hakim El Hattab
+ */
+
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	
+	background-color: #000;
+	color: #eee;
+	font-family: 'Molengo', Arial, Helvetica, sans-serif;
+    background-size:100% auto;
+}
+
+
+/*********************************************
+ * BOX CONTENTS
+ *********************************************/
+
+h1 {
+	padding: 40px;
+	font-size: 52px;
+	text-transform: uppercase;
+}
+
+p{
+	padding: 10px 40px 10px 40px;
+	font-size: 36px;
+	line-height: 120%;
+}
+#maincon{width:100%;height:100%;background:url('../img/bg1.jpg') no-repeat center center;background-size:100% 100%;position:absolute;top:0px;left:0px;}
+#slidercon{width:100%;height:100%;position:absolute;top:0;left:0;z-index:1}
+#slidercon .sbcon{width:50%;height:13.125%;position:absolute;top:43%;left:25%;background:url("../img/sliderbarbg.png") no-repeat center center;background-size:100% auto;text-align:center;}
+#sbtextcon{width:100%;height:100%;position:absolute;top;0px;left:0px;background:url('../img/slidertext.png') no-repeat center center;background-size:auto 50%;}
+#slidercon .sbpercon{position:absolute;width:100%;height:100%;z-index:1;overflow:hidden;}
+#slidercon img.sbconper{height:100%;}
+#slidercon img.sliderbtn{height:100%;position:absolute;top:0px;left:0px;z-index:2;}
+#slidercon img.slidertip{position:absolute;top:60%;left:18%;}
+#slidercon .sliderhalo{position:absolute;width:106.67%;top:-86px;left:-146px;opacity:0;z-index:1;}
+
+#world {-webkit-perspective: 500px;-webkit-perspective-origin: 50% 50%;width: 100%;height: 100%;display:none;position:absolute;top:0px;left:0px;}
+#room {width: 90%;height: 60%;position: absolute;left: 5%;top: 15%;}
+#back {width: 100%;height: 100%;background:url('../img/btncover.png');-webkit-transform: translateZ(30px) rotateX(0deg);background-size:100% auto}
+
+
+.itemcon{float:left;width:20%;height:100%;background-position:center bottom;background-size:100% auto;background-repeat:no-repeat}
+.routecon{width:100%;height:100%;background:no-repeat center center;background-size:100% 100%;display:none;position:absolute;top:0px;left:0px;overflow:hidden;}
+.routecon .returnbtn{position:absolute;width:84px;height:12.5%;left:calc(50% - 41px);top:87.5%;background:url('../img/returnback.png') no-repeat center top;background-size:100% auto;z-index:10;}
+#goon{position:absolute;width:54%;top:42.35%;left:23%;;z-index:10;}
+.halo{position:absolute;display:none;opacity:0.9}
+.endpage{position:absolute;top:0px;left:0px;width:100%;height:100%;display:none;}
+.endpagearea{position:absolute;left:8.5%;top:19.84%;background:url("../img/endbg1.png") no-repeat center center;width:90.22%;height:61.25%;background-size:100% 100%;}
+
+#pregage{width:100%;height:100%;position:absolute;top:0px;left:0px;display:none;}
+#routetip{position:absolute;left:34.5%;top:43.43%;width:31%;}
+#myCanvas{position:absolute;top:0px;left:0px;z-index;9}
+#formcon{width:100%;height:100%;background-repeat:no-repeat;background-position:center center;background-size:100% 100%;position:absolute;top:0px;left:0px;display:none;}
+#formcon .close{ position:absolute; right:6%; top:43px;}

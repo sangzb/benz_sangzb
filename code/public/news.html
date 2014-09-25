@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/final.css"/>
+<style>
+body{ background:#FFF;}
+</style>
+<script type="text/javascript" src="js/c-class/jquery.min.js"></script>
+<script type="text/javascript" src="js/c-class/index.js"></script>
+<script>
+$(function(){
+	var length2=$("#news_contact .list ul").length
+	if(length2<=1){
+		$("#news_contact .arrow_right").addClass("disable")	
+	}else{
+		$("#news_contact .arrow_right").removeClass("disable")	
+	}
+	$("#news_contact .arrow_right").click(function(){
+		var index=$("#news_contact .list ul.select").index()
+		var NextIndex=index+1
+		if(NextIndex<length2){
+			$("#news_contact .list ul").eq(NextIndex).fadeIn().addClass("select").siblings().hide().removeClass("select")
+			
+		}else{
+			alert("最后一页")	
+		}
+	})
+	
+	$("#news_contact .arrow_left").click(function(){
+		var index=$("#news_contact .list ul.select").index()
+		var NextIndex=index-1
+		if(NextIndex<length2&&NextIndex>=0){
+			$("#news_contact .list ul").eq(NextIndex).fadeIn().addClass("select").siblings().hide().removeClass("select")
+			
+		}else{
+			alert("最后一页")	
+		}
+	})	
+	
+	$("#news_contact .list ul li") .click(function(){
+		var imgUrl=$(this).attr("title")	
+		$("#big_gallery").fadeIn();
+		$("#big_gallery .info").find("img.big").attr("src",imgUrl)
+	})
+	$("#big_gallery .info .close").click(function(){
+		$("#big_gallery").fadeOut();
+		
+	})
+	
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="news_contact">
+	<div class="youku"><img src="images/news/youku.jpg" /></div>
+	<div class="news">
+			<dl>
+				<dd class="data">2014/8/26</dd>
+				<dd class="contact">梅赛德斯-奔驰全新长轴距C级车革新上市-驾驭改变</dd>
+				<dt class="more"><a href="#">阅读全文 ></a></dt>
+			</dl>
+			<dl>
+				<dd class="data">2014/8/26</dd>
+				<dd class="contact">梅赛德斯-奔驰全新长轴距C级车革新上市-驾驭改变</dd>
+				<dt class="more"><a href="#">阅读全文 ></a></dt>
+			</dl>
+			<dl style="margin-top:20px;">
+				<dd class="data">2014/8/26</dd>
+				<dd class="contact">梅赛德斯-奔驰全新长轴距C级车革新上市-驾驭改变</dd>
+				<dt class="more"><a href="#">阅读全文 ></a></dt>
+			</dl>
+			<dl style="margin-top:20px;">
+				<dd class="data">2014/8/26</dd>
+				<dd class="contact">梅赛德斯-奔驰全新长轴距C级车革新上市-驾驭改变</dd>
+				<dt class="more"><a href="#">阅读全文 ></a></dt>
+			</dl>
+		</div>	
+	<div class="gallery">
+		
+		<div class="arrow_left"><a href="#">左边</a></div>
+		<div class="list">
+			<ul class="select">
+				<li style="margin:0;" title="images/news/youku.jpg"><span></span><img  src="images/news/youku.jpg" width="213" height="121" /></li>
+				<li title="images/news/youku.jpg"><span></span><img src="images/news/youku.jpg" width="213" height="121" /></li>
+				<li title="images/news/youku.jpg"><span></span><img src="images/news/youku.jpg" width="213" height="121" /></li>
+				<li title="images/news/youku.jpg"><span></span><img src="images/news/youku.jpg" width="213" height="121" /></li>
+			
+			</ul>	
+			<ul>
+				<li style="margin:0;"><span></span><img src="images/news/youku.jpg" width="213" height="121" /></li>
+				<li><span></span><img src="images/news/youku.jpg" width="213" height="121" /></li>
+				<li><span></span><img src="images/news/youku.jpg" width="213" height="121" /></li>
+				<li><span></span><img src="images/news/youku.jpg" width="213" height="121" /></li>
+			
+			</ul>
+		</div>
+		<div class="arrow_right"><a href="#">右边</a></div>
+	</div>
+		
+</div>
+
+<div id="big_gallery">
+	<div class="mask"></div>
+	<div class="info"><a class="close"><img src="images/close.png" /></a><img src="" class="big" /></div>	
+</div>
+</body>
+</html>

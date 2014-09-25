@@ -1,0 +1,67 @@
+<!doctype html>  
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>benz</title>
+		<meta name="viewport" content="width=devicewidth">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main_pc.css">
+	<body>
+		<div style="width:100%;height:100%;background:url('img/bg.jpg');background-size:100% auto;position:absolute;top:0px;left:0px;">
+			<div id="world">
+				<div id="room">
+					<!-- The back wall which holds our content -->
+					<div id="back"></div>				
+				</div>
+			</div>
+		</div>
+		<a style="position:absolute;top:10%;left:calc(50% - 35px);color:#fff;" href="http://{{ room.sioIP }}/mobile_view?roomid={{ room.roomid }}" taget="_blank">Benz C-Class Controller</a>
+	<script src="js/holobox_pc.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+  
+	
+	var endpoint="http://{{ room.sioIP }}{% if room.sioPort!=80 %}:{{ room.sioPort }}{% endif %}";	
+	var roomid="{{ room.roomid }}";			
+	var socket;
+	function regSocket(reuse_mobile){
+		if(reuse_mobile===undefined)
+			reuse_mobile=0;	
+		if(reuse_mobile==1)
+		{
+			socket.emit("pc reuse mobile",roomid);
+			return;
+		}	
+		socket=new io(endpoint);
+		socket.on('connect', function () {
+			console.log("connect established");	
+			socket.emit("pc connect",roomid);			
+	  	});
+		socket.on('room matched', function () {
+			
+		});
+		socket.on("mobile command",function(data){
+			console.log("topc command"+data.command);
+		});
+		socket.on("pc update movement",function(data){
+			var myEvent = new CustomEvent("update pc model", {
+			detail: data
+			});
+			dispatchEvent(myEvent);	
+		});
+		socket.on('error', function (data) {
+	    console.log(data);    
+	  });
+	}
+
+	$( window ).unload(function() {
+	  socket.emit("pc disconnect",roomid);
+	});
+
+	regSocket();
+  </script>
+	</body>
+</html>
+
+  

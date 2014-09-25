@@ -1,0 +1,881 @@
+<!doctype html>  
+<html lang="en" style="height:100%;width:100%;">
+	<head>
+		<meta charset="utf-8">
+		<title>全新梅赛德斯-奔驰长轴距C级车 驾驭改变</title>
+		 <meta name="apple-mobile-web-app-capable" content="yes">
+    	 <meta name="apple-touch-fullscreen" content="yes">
+    	 <meta id="VIEWPORT" name="viewport" content="width=device-width,maximum-scale=1.0,minimal-ui">
+		<link rel="stylesheet" href="{{img_path}}css/reset.css">
+		<link rel="stylesheet" href="{{img_path}}css/main.css">
+    </head>           
+	<body style="height:100%;width:100%;background:#000 url('img/bg_l.jpg') no-repeat center center;background-size:auto 100%;">
+		<div id="outercon" style="height:100%;width:100%;position:absolute;top:0px;left:0px;">
+			
+			<div id="maincon" style="overflow:hidden;">
+				<img id="logo" src="{{img_path}}img/logo.png" style="position:absolute;position:absolute;top:5.6%;right:2%;z-index:2;"/>
+				<img id="logotext" src="{{img_path}}img/logotext.png" style="position:absolute;position:absolute;top:5.6%;left:2%;z-index:2;"/>
+				<img id="soundicon" src="{{img_path}}img/sound.png" style="position:absolute;bottom:5.6%;left:2%;z-index:2; display:none;"/>
+				<img id="sharetext" src="{{img_path}}img/sharetext.png" style="position:absolute;position:absolute;bottom:5.6%;right:2%;z-index:2;"/>
+				
+				<div id="slidercon">
+					<div class="sbcon" >
+						<div id="sbtextcon" style="width:100%;height:100%;position:absolute;top;0px;left:0px;background:url('{{img_path}}img/slidertext.png') no-repeat center center;background-size:auto 50%;">
+							<div class="sbpercon">
+								<img class="sbconper" src="{{img_path}}img/sliderbarpercent.png"/>
+							</div>
+							
+							<img class="sliderbtn" src="{{img_path}}img/sliderbtn.png" />
+							<img class="sliderhalo" src="{{img_path}}img/sliderhalo.png" />
+						</div>
+					</div>
+					<img class="slidertip" src="{{img_path}}img/slidertip.png" />
+				</div>
+				<div id="pregage">
+					<img id="videocontrol" cs="play" src="{{img_path}}img/pause.png" style="position:absolute;top:44%;left:25%;" onClick="_smq.push(['custom','视频播放','视频播放_开始播放时_M']);"/>
+					<!--<img id="fullsc" src="{{img_path}}img/fullsc.png" style="position:absolute;top:44%;left:32.2%;"/>-->
+					<img id="skipvideo" src="{{img_path}}img/skipvideo.png" style="position:absolute;top:44%;left:50%;" onClick="_smq.push(['custom','首页右下角','首页右下角_intro动画_跳过_M']);"/>
+
+				</div>
+				
+				<div id="world">
+					<div id="room">
+						<div id="back">
+							<div style="width:96%;height:100%;position:absolute;top:0%;left:2%;">
+								<div class="itemcon" index="1" style="background-image:url('img/tab1.png')" onClick="_smq.push(['custom','产品点导航','产品点导航_产品点1_M']);"></div>
+								<div class="itemcon" index="2" style="background-image:url('img/tab2.png')" onClick="_smq.push(['custom','产品点导航','产品点导航_产品点2_M']);"></div>
+								<div class="itemcon" index="3" style="background-image:url('img/tab3.png')" onClick="_smq.push(['custom','产品点导航','产品点导航_产品点3_M']);"></div>
+								<div class="itemcon" index="4" style="background-image:url('img/tab4.png')" onClick="_smq.push(['custom','产品点导航','产品点导航_产品点4_M']);"></div>
+								<div class="itemcon" index="5" style="background-image:url('img/tab5.png')" onClick="_smq.push(['custom','产品点导航','产品点导航_产品点5_M']);"></div>
+							</div>
+						</div>
+					</div>
+					<img src="img/shaketip.png" style="position:absolute;width:33.27%;height:7.8%;left:33%;top:78%;"/>
+				</div>
+			</div>
+			<div class="routecon">
+				<div class="returnbtn"></div>
+				<img id="goon" src="{{img_path}}img/goon.png"/>
+				<img id="routetip" src="{{img_path}}img/routetip.png" />
+				<img class="halo" src="{{img_path}}img/halo.png" /> 
+				<canvas id="myCanvas" style="background-color:transparent;"oncontextmenu="return false;"></canvas>
+				<div id="wrongroutetip" style="position:absolute;width:44%;height:33%;left:28%;top:33%;display:none;opacity:0;background:url('img/wrongroute.png') no-repeat center center;background-size:100% 100%;color:#fff;">
+					<div style="margin-left:15%;margin-top:10%; ">描绘有误，再尝试一次!</div>
+				</div>
+				
+			</div>
+			<div class="endpage">
+				<div class="endpagearea">
+					<div id="btn1" onClick="_smq.push(['custom','探索结束','探索结束_参加预售_M']);" style="width:20.27%;height:17.53%;left:1%;top:38.39%;position:absolute;"></div>
+					<div id="btn2" onClick="_smq.push(['custom','探索结束','探索结束_分享_M']);" style="width:17.9%;height:17.53%;left:65.86%;top:38.39%;position:absolute;"></div>
+					<div id="btn3" onClick="_smq.push(['custom','探索结束','探索结束_再次体验_M']);" style="width:14.18%;height:17.53%;left:85.4%;top:38.39%;position:absolute;"></div>
+				</div>
+			</div>
+			<div id="formcon" style="background-image:url('{{img_path}}img/formbg.jpg');">
+				<div id="formtip" style="z-index:999;position:absolute;width:44%;height:33%;left:28%;top:33%;display:none;background:url('img/popupcon.png') no-repeat center center;background-size:100% 100%;color:#fff;">
+					<div class="tiptxt" style="width:100%;text-align:center;margin-top:10%;"></div>
+				</div>
+				<!--close-->
+				<img class="close" src="{{img_path}}img/close.png" width="35"/>	
+				<!--name-->
+				<input type="text" id="uname" name="uname" style="position:absolute;width:24%;height:7%;left:21%;top:41.76%;color:#fff;background:none;border:none;"/>
+				<!--mobile-->
+				<input type="text" id="mobile" name="mobile" style="position:absolute;width:25%;height:7%;left:65.5%;top:53.4%;color:#fff;background:none;border:none;"/>
+				<!--province-->
+				<select id="province" name="province" style="position:absolute;left:21.12%;top:53.4%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;"></select>
+				<!--city-->
+				<select id="city" name="city" style="position:absolute;left:34.68%;top:53.4%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;"></select>
+				<!--sex radio-->
+				<img id="sexmale" src="img/btnrd_s.png" style="position:absolute;top:42.5%;left:65.5%"/>
+				<img id="sexfemale" class="" src="img/btnrd_u.png" style="position:absolute;top:42.5%;left:76.5%"/>
+				<input id="sex" type="hidden" name="sex" value="1" />
+				<!--submit button-->
+				<input id="submitbtn" type="button" value="" style="position:absolute;width:48%;height:11.8%;left:8.5%;top:80.96%;opacity:0;"/>
+				<!--reset button-->
+				<input id="resetbtn" onClick="_smq.push(['custom','参加预售','参加预售_重填_M']);" type="button" style="position:absolute;width:33%;height:11.8%;left:58%;top:80.96%;opacity:0;"/>
+				<!--share button-->
+				<!--<div id="sharetext" style="width:68px;height:48px;position:absolute;top:0;left:0;"></div>-->
+			</div>
+		</div>
+		
+		<!--<a id="mobile_link" style="position:absolute;top:10%;left:calc(50% - 35px);color:#fff;" href="http://{{ room.sioIP }}/mobile_view?roomid={{ room.roomid }}">mobile end</a>-->
+		
+  <script type="text/javascript" src="{{img_path}}js/jquery.min.js"></script>
+  <script src="{{img_path}}js/socket.io.min.js"></script>  
+  <script type="text/javascript" src="{{img_path}}js/{{device_adaptor}}.js"></script>
+  <script type="text/javascript" src="{{img_path}}js/dollar_benz.js"></script>
+  <script type="text/javascript" src="{{img_path}}js/cities.js"></script>
+  <script type="text/javascript" src="{{img_path}}js/share.js"></script>
+  <script>
+  	$("body").bind("touchmove",function(e){e.stopPropagation();e.preventDefault();});
+  	var endpoint="http://{{ room.sioIP }}{% if room.sioPort!=80 %}:{{ room.sioPort }}{% endif %}";		
+	var roomid="{{ room.roomid }}";	
+	var connect_success=false;
+	var socket=new io(endpoint);	
+	socket.on('connect', function () {
+		//console.log("mobile side connection success");		
+		//ask pc to  change qr code display
+		sendCommand("qr_scan",{});
+		connect_success=true;    
+		//disable movement capture at start
+		disableMovementCapture(1);		
+		$( window ).unload(function() {			
+			  sendCommand("mobile_unload",{});
+			});
+	  });
+	socket.on('error', function (data) {
+    //console.log(data);    
+  });
+    socket.on('room not exists', function () {
+	//console.log("room not exists");    
+  });
+    //on pc disconnect mobile will close socket
+    socket.on("pc disconnect",function(){
+    	//try to remove eventListener
+    	//console.log("pc disconnect");  
+    	/*
+    	var myEvent = new CustomEvent("pc disconnect", {
+		detail: 1
+		});
+		dispatchEvent(myEvent);*/
+		disableMovementCapture(1);
+		socket.disconnect();
+		window.location.href="http://c-class.mymb.com.cn";
+		//$("#mobile_link").html("pc leave,88");
+    });
+
+    //on pc try to use mouse
+    socket.on("pc use mouse",function(){
+    	//try to remove eventListener
+    	//console.log("pc use mouse");  
+    	/*
+    	var myEvent = new CustomEvent("pc disconnect", {
+			detail: 1
+		});
+		dispatchEvent(myEvent);		
+		*/
+		disableMovementCapture(1);
+		socket.disconnect();
+		window.location.href="http://c-class.mymb.com.cn";
+		//$("#mobile_link").html("pc use mouse");
+    });
+    socket.on("mobile command",function(data){
+		//console.log("from pc command"+data.command);		
+		switch(data.command)
+		{
+			case "video_complete":
+				//goto home page				
+				$(".returnbtn").trigger("click");
+				sendCommand("return_home",{});
+				break;
+		}
+	});
+    //on pc try to use mobile again
+    socket.on("pc reuse mobile",function(){
+    	//try to remove eventListener
+    	//console.log("pc use mouse");  
+    	/*
+    	var myEvent = new CustomEvent("pc disconnect", {
+			detail: 0
+		});
+		dispatchEvent(myEvent);		*/
+		disableMovementCapture(0);
+		//$("#mobile_link").html("pc reuse mobile");
+    });
+  
+  
+    //sendCommand("show_detail",{detailNum:1});//点击按钮
+	//sendCommand("line_check",{lineNum:1}); //成功画线
+	//sendCommand("video_SOUND",{sound:1});
+	//sendCommand("video_play",{play:1});
+	//sendCommand("video_fullscreen",{fullscreen:1});
+    function sendCommand(commandName,data)
+    {    	    	    
+    	//console.log(commandName+":"+data);
+    	socket.emit("mobile command",{"command":commandName,"data":data,"roomid":roomid});
+    }
+    function sendDebugInfo(err)
+    {    	    	        	
+    	socket.emit("mobile debug",err);
+    }
+    function disableMovementCapture(data)
+    {
+    	//in simple mode,always disable motion capture
+    	var myEvent = new CustomEvent("pc disconnect", {
+			detail: 1
+		});
+		dispatchEvent(myEvent);	
+    }
+    $(window).focus(function() {
+    	var myEvent = new CustomEvent("mobile windowfocus", {
+			detail: 1
+		});
+		dispatchEvent(myEvent);
+	}).bind("orientationEvent",function(){
+		$(this).scrollTop(0);
+	});
+	
+	/**
+	$(window).blur(function() {
+	    var myEvent = new CustomEvent("mobile windowfocus", {
+		detail: 0
+		});
+		dispatchEvent(myEvent);
+		socket.emit("mobile blur","blur!!!!");
+		//$("#mobile_link").html("mobile have been blur");
+	});
+	**/
+	//屏幕适配			
+	//划屏部分
+	var sliderpos={sx:0,sy:0,ex:0,ey:0}
+	var sbbtn=$("#slidercon .sliderbtn");
+	var sbperc=$("#slidercon .sbpercon");
+	var sbhalo=$("#slidercon .sliderhalo");
+	
+	sbperc.width(parseInt(sbbtn.css("left"))+sbbtn.width()/2);
+	
+	sbbtn.bind("touchstart",function(e){
+		var event=e.originalEvent.changedTouches[0];
+		var x=event.clientX;
+		sliderpos.sx=x;
+		//sbhalo.css({"left":sliderpos.rx+parseInt(sbbtn.css("left")),"z-index":2});
+		$("#slidercon").bind("touchmove",slidermove);
+		$("#slidercon").bind("touchend",slidermoveend);
+		$("#sbtextcon").css("background-image","none");
+		
+		
+		sbhalo.css({"left":0-sbhalo.width()*0.5526+sbbtn.width()/2,"top":0-sbhalo.height()*0.4751+sbbtn.width()/2,"z-index":2});
+		sliderpos.limit=THISW*0.5-sbbtn.width();
+		sliderpos.rx=parseInt(sbhalo.css("left"));
+	});
+	var intervalID=0;
+	function slidermove(e){
+		var event=e.originalEvent.changedTouches[0];
+		var x=event.clientX;
+		var difx=x-sliderpos.sx;
+		var ol=parseInt(sbbtn.css("left"));
+		if(ol>=sliderpos.limit){
+			//if screen slide success,begin play
+			if(connect_success)
+				socket.emit("mobile connect",roomid);			
+			else
+			{
+				intervalID=setInterval(function(){
+					if(connect_success)
+					{
+						clearInterval(intervalID);
+						socket.emit("mobile connect",roomid);
+					}
+					
+				},1000); //for slow connection,need to be optimized 
+			}
+			sbbtn.css("left",sliderpos.limit);
+			sbhalo.css("left",sliderpos.rx+sliderpos.limit);
+			
+			$("#slidercon").animate({"opacity":0},1000,function(){$("#slidercon").remove()});
+			$("#pregage").css("opacity",0).show().animate({"opacity":1},1000);
+			
+			//结束
+			$("#slidercon").unbind("touchmove").unbind("touchend");
+			/*
+			var sc=$("<img src=\"{{img_path}}img/slidercover.jpg\" />").load(function(){
+				var con=$("#slidercon");
+				var imgcon=sc[0]
+				$("<canvas id=\"sccanvas\" height=\""+con.height()+"\" width=\""+con.width()+"\"></canvas>").appendTo(con);
+				
+				
+				
+				var canvas = document.getElementById('sccanvas');
+				canvas.style.position="absolute";
+				canvas.style.top="0";
+				canvas.style.left="0";
+				canvas.style.opacity=0;
+				var context= canvas.getContext('2d');
+				context.drawImage(imgcon,0,0,imgcon.width,imgcon.height,0,0,con.width(),con.height());
+				context.shadowBlur = 20;
+				context.shadowColor = "white";
+				context.fillStyle = "rgba(255,255,255,1)";
+				context.strokeStyle = "rgba(255,255,255,1)";
+				context.lineWidth = 2;
+				
+				var _f=0;
+				for(var i=0;i<Math.floor(con.width()/50);i++){
+					context.beginPath();
+					if(i%2){
+						_f=0;
+						context.moveTo(i*50,con.height()/2-50);
+						context.lineTo((i+1)*50,con.height()/2-50);
+						context.moveTo((i+1)*50,con.height()/2-50);
+						context.lineTo((i+1)*50,con.height()/2+50);
+						context.clearRect(i*50, con.height()/2-50, 50, con.height()/2+50)
+					}else{
+						_f=1;
+						context.moveTo(i*50,con.height()/2+50);
+						context.lineTo((i+1)*50,con.height()/2+50);
+						context.moveTo((i+1)*50,con.height()/2+50);
+						context.lineTo((i+1)*50,con.height()/2-50);
+						context.clearRect(i*50, con.height()/2+50, 50, con.height()/2-50)
+					}
+					context.closePath();
+	            	context.stroke();
+				}
+				if(_f){
+					context.beginPath();
+					context.moveTo(Math.floor(con.width()/50)*50,con.height()/2-50);
+					context.lineTo(con.width(),con.height()/2-50);
+					context.clearRect(Math.floor(con.width()/50)*50, con.height()/2-50, (con.width()-Math.floor(con.width()/50)*50), con.height()/2+50);
+					context.closePath();
+	            	context.stroke();
+				}else{
+					context.beginPath();
+					context.moveTo(Math.floor(con.width()/50)*50,con.height()/2+50);
+					context.lineTo(con.width(),con.height()/2+50);
+					context.clearRect(Math.floor(con.width()/50)*50, con.height()/2+50, (con.width()-Math.floor(con.width()/50)*50), con.height()/2-50);
+					context.closePath();
+	            	context.stroke();
+				}
+				
+				context.lineTo((i+1)*50,con.height()/2+50);
+				
+				
+				$("<canvas id=\"sccanvas1\" height=\""+con.height()+"\" width=\""+con.width()+"\"></canvas>").appendTo(con);
+				var canvas1 = document.getElementById('sccanvas1');
+				_f=0
+				canvas1.style.position="absolute";
+				canvas1.style.top="0";
+				canvas1.style.left="0";
+				canvas1.style.opacity=0;
+				var context1= canvas1.getContext('2d');	
+				context1.drawImage(imgcon,0,0,imgcon.width,imgcon.height,0,0,con.width(),con.height());
+				context1.shadowBlur = 20;
+				context1.shadowColor = "white";
+				context1.fillStyle = "rgba(255,255,255,1)";
+				context1.strokeStyle = "rgba(255,255,255,1)";
+				context1.lineWidth = 2;
+				
+				for(var i=0;i<Math.floor(con.width()/50);i++){
+					context1.beginPath();
+					if(i%2){
+						_f=0;
+						context1.moveTo(i*50,con.height()/2-50);
+						context1.lineTo((i+1)*50,con.height()/2-50);
+						context1.moveTo((i+1)*50,con.height()/2-50);
+						context1.lineTo((i+1)*50,con.height()/2+50);
+						context1.clearRect(i*50, 0, 50, con.height()/2-50)
+					}else{
+						_f=1;
+						context1.moveTo(i*50,con.height()/2+50);
+						context1.lineTo((i+1)*50,con.height()/2+50);
+						context1.moveTo((i+1)*50,con.height()/2+50);
+						context1.lineTo((i+1)*50,con.height()/2-50);
+						context1.clearRect(i*50, 0, 50, con.height()/2+50)
+					}
+					context1.closePath();
+	            	context1.stroke();
+				}
+				
+				if(_f){
+					context1.beginPath();
+					context1.moveTo(Math.floor(con.width()/50)*50,con.height()/2-50);
+					context1.lineTo(con.width(),con.height()/2-50);
+					context1.clearRect(Math.floor(con.width()/50)*50, 0, (con.width()-Math.floor(con.width()/50)*50), con.height()/2+50);
+					context1.closePath();
+	            	context1.stroke();
+				}else{
+					context1.beginPath();
+					context1.moveTo(Math.floor(con.width()/50)*50,con.height()/2+50);
+					context1.lineTo(con.width(),con.height()/2+50);
+					context1.clearRect(Math.floor(con.width()/50)*50, 0, (con.width()-Math.floor(con.width()/50)*50), con.height()/2-50);
+					context1.closePath();
+	            	context1.stroke();
+				}
+
+				$(canvas).animate({"opacity":1},2000);
+				$(canvas1).animate({"opacity":1},2000,function(){
+					$(".slidertip",con).remove();
+					$("#pregage").show();
+					$(canvas).animate({"top":-con.height()},1000);
+					$(canvas1).animate({"top":con.height()},1000,function(){
+						$("#slidercon").remove();
+					});
+				});
+				$(".sbcon",con).animate({"opacity":0},1000,function(){
+					$(".sbcon",con).remove();
+				})
+			})*/
+		}else{
+			if(ol+difx<0){
+				sbbtn.css("left",0);
+				sbhalo.css({"left":sliderpos.rx,"opacity":0});
+			}else{
+				sbbtn.css("left",ol+difx);
+				sbhalo.css({"left":sliderpos.rx+ol+difx,"opacity":(ol+difx)/sliderpos.limit*0.9});
+			}
+		}
+		sbperc.width(parseInt(sbbtn.css("left"))+sbbtn.width()/2);
+		sliderpos.sx=x;
+	}
+	function slidermoveend(){
+		sbhalo.css("z-index",1);
+		$("#slidercon").unbind("touchmove").unbind("touchend");
+		sbbtn.animate({"left":0},200);
+		sbhalo.css({"left":sliderpos.rx,"opacity":0});
+		sbperc.animate({"width":sbbtn.width()/2},200,function(){
+			$("#sbtextcon").css("background-image","url('{{img_path}}img/slidertext.png')");
+		});
+		
+	}
+	//划屏部分结束
+	
+	$("#room .itemcon").click(routeaction);
+	
+	$(".returnbtn").click(function(){
+		sendCommand("return_home",{});
+		if(!efi){
+			$("#world").css("opacity",1).show();
+			$(".routecon").css("opacity",1).hide();
+			$("#room .itemcon").click(routeaction);
+			//
+			disableMovementCapture(0);
+		}
+	});
+	$("#btn3").click(function(){
+		$(".returnbtn").trigger("click");
+		$("#world").css("opacity",1).show();
+		$(".routecon").css("opacity",1).hide();
+		$("#room .itemcon").click(routeaction);
+		$(".endpage").hide();
+		ci=1;
+		$(".itemcon").each(function(i,v){
+			$(v).css({"opacity":"1"}).data("s",false);
+		});
+	});
+	
+	//跳过视频界面
+	$("#skipvideo").click(function(){
+		$("#pregage").hide();
+		//enable capture when video skip
+		disableMovementCapture(0);		
+		_smq.push(['custom','首页右下角','首页右下角_intro动画_跳过_M']);
+		sendCommand("video_skip",{});
+		$("#world").css("opacity",1).show();
+	});
+	//视频播放暂停
+	$("#videocontrol").click(function(){
+		var tar=$(this);
+		sendCommand("video_play",{});
+		if(tar.attr("cs")=="play"){
+			tar.attr("src","img/play.png").attr("cs","pause");
+		}else{
+			_smq.push(['custom','视频播放','视频播放_开始播放时_M']);
+			tar.attr("src","img/pause.png").attr("cs","play");
+		}
+	});
+	//静音
+	
+	$("#soundicon").click(function(){
+		if(this.src.indexOf("sound1")>0){
+			this.src="img/sound.png";
+		}else{
+			this.src="img/sound1.png";
+		}
+		sendCommand("video_sound",{});
+	})
+	//全屏
+	/*
+	$("#fullsc").click(function(){
+		sendCommand("video_fullscreen",{});
+	});
+	*/
+	var posmapping={"1":38.75,"2":35,"3":40.3,"4":81.875,"5":54.375}
+	function routeaction(e){
+		var tar=$(this);
+		var tarindex=tar.attr("index");
+		$("#room .itemcon").unbind("click");
+		$("#world").hide();
+		onLoadEvent();
+		
+
+		ci=tarindex;	
+		sendCommand("show_detail",{detailNum:ci-1});
+		$(".routecon").show().css({"background-image":"url('{{img_path}}img/route"+ci+".png')"});
+		halo.css("opacity",1).show().css({"left":0-71,"top":(posmapping[(ci+"")]*THISH/100)-71});
+		$("#goon").hide();
+		$("#routetip").show();
+		//
+		$(".itemcon").each(function(i,v){
+			if(i==(ci-1)){
+				$(v).data("s",true);
+				return false;
+			}
+		});
+		disableMovementCapture(1);
+	}
+	
+	
+	
+	var mapping={"1":"benz_z","2":"benz_e","3":"benz_v","4":"benz_o","5":"benz_eee3"};
+	var ci=1;
+	var _isDown, _points, _r, _g, _rc;
+		function onLoadEvent()
+		{
+			_points = new Array();
+			_r = new DollarRecognizer();
+
+			var canvas = document.getElementById('myCanvas');
+			canvas.setAttribute("width",$("#outercon").width());
+			canvas.setAttribute("height",$("#outercon").height());
+			canvas.style.display="block";
+			_g = canvas.getContext('2d');
+			
+			_g.fillStyle = "rgba(255,255,255,1)";
+			_g.strokeStyle = "rgba(255,255,255,1)";
+			_g.lineWidth = 6;
+			_g.font = "16px Gentilis";
+			_rc = getCanvasRect(canvas); 
+			_g.clearRect(0, 0, _rc.width, _rc.height);
+			_g.shadowBlur = 0;
+						//_g.shadowColor = "white";
+			_isDown = false;
+			$("body").bind("touchmove",function(e){e.preventDefault();})
+		}
+		function getCanvasRect(canvas)
+		{	
+			//监测代码
+			if(ci==1){
+				_smq.push(['custom','产品点体验','产品点体验_产品点1_M']);
+			}
+			if(ci==2){
+				_smq.push(['custom','产品点体验','产品点体验_产品点2_M']);
+			}
+			if(ci==3){
+				_smq.push(['custom','产品点体验','产品点体验_产品点3_M']);
+			}		
+			if(ci==4){
+				_smq.push(['custom','产品点体验','产品点体验_产品点4_M']);
+			}
+			if(ci==5){
+				_smq.push(['custom','产品点体验','产品点体验_产品点5_M']);
+			}						
+			var w = canvas.width;
+			var h = canvas.height;
+			var cx = canvas.offsetLeft;
+			var cy = canvas.offsetTop;
+			while (canvas.offsetParent != null)
+			{
+				canvas = canvas.offsetParent;
+				cx += canvas.offsetLeft;
+				cy += canvas.offsetTop;
+			}
+			return {x: 0, y: 0, width: w, height: h,mx:parseInt($("#outercon").css("left")),my:parseInt($("#outercon").css("top"))};
+		}
+		//
+		// Mouse Events
+		//
+		var halo=$(".halo");
+		var renderh=null;
+		function mouseDownEvent(e)
+		{
+			var event=e.originalEvent.changedTouches[0];
+			var x=event.clientX;
+			var y=event.clientY;
+			document.onselectstart = function() { return false; } // disable drag-select
+			document.onmousedown = function() { return false; } // disable drag-select
+			_isDown = true;
+			x -= (_rc.x+_rc.mx);
+			y -= (_rc.y+_rc.my);
+			if (_points.length > 0)
+				_g.clearRect(0, 0, _rc.width, _rc.height);
+			_points.length = 1; // clear
+			_points[0] = new Point(x, y);
+			
+			halo.css({"left":x-Math.round(halo.width()/2),"top":y-Math.round(halo.height()/2),"opacity":1}).show();
+			$("#routetip").hide();
+
+			renderh=setInterval(function(){
+				var lng=_points.length;
+				for(var i=1;i<lng;i++){
+					var _p=_points[i];
+					_g.beginPath();
+		            _g.moveTo(_p.X, _p.Y)
+		            _g.arc(_p.X, _p.Y, 0.5, 0, Math.PI * 2, true);
+		            _g.closePath();
+		            _g.stroke();
+		            //_g.beginPath();
+		            //_g.moveTo(_p.X, _p.Y)
+					//_g.lineTo(_p1.X, _p1.Y);
+					//_g.closePath();
+					//_g.stroke();
+				}
+			},0);
+		}
+		
+		$("#myCanvas").bind("touchstart",mouseDownEvent);
+		function mouseMoveEvent(e)
+		{
+			var event=e.originalEvent.changedTouches[0];
+			var x=event.clientX;
+			var y=event.clientY;
+			//halo
+			halo.css({"left":x-_rc.mx-Math.round(halo.width()/2),"top":y-_rc.my-Math.round(halo.height()/2)}).show();
+			if (_isDown)
+			{
+				x -= (_rc.x+_rc.mx);
+				y -= (_rc.y+_rc.my);
+				_points.push({X:x,Y:y})
+				drawConnectedPoint();
+			}
+		}
+		$("#myCanvas").bind("touchmove",mouseMoveEvent);
+		function mouseUpEvent(e)
+		{
+			
+			if(renderh){
+				clearInterval(renderh)
+			}
+			var event=e.originalEvent.changedTouches[0];
+			var x=event.clientX;
+			var y=event.clientY;
+			document.onselectstart = function() { return true; } // enable drag-select
+			document.onmousedown = function() { return true; } // enable drag-select
+			if (_isDown)
+			{
+				_isDown = false;
+				if (_points.length >= 10){
+					var result = _r.Recognize(_points, false);
+					if(result.Name==mapping[ci] && parseInt(result.Score*100)>75){
+						//验证通过
+						//benz_z:1，benz_e:2,benz_v:3,benz_o:4,benz_z:5
+						halo.animate({"opacity":0});
+						var patter_map={"benz_z":0,"benz_e":1,"benz_v":2,"benz_o":3,"benz_eee3":4};						
+						sendCommand("line_check",{lineNum:patter_map[result.Name]});
+						_g.clearRect(0, 0, _rc.width, _rc.height);
+						_g.shadowBlur = 20;
+						_g.shadowColor = "white";
+						var lng=_points.length;
+						for(var i=1;i<lng;i++){
+							var _p=_points[i];
+							var _p1=_points[i-1];
+							
+							_g.beginPath();
+				            _g.moveTo(_p.X, _p.Y)
+				            _g.arc(_p.X, _p.Y, 0.5, 0, Math.PI * 2, true);
+				            _g.closePath();
+				            _g.stroke();
+				            
+				            
+				            _g.beginPath();
+				            _g.moveTo(_p.X, _p.Y)
+							_g.lineTo(_p1.X, _p1.Y);
+							_g.closePath();
+							_g.stroke();
+						}					
+						efi=0;
+						setTimeout(endeffect.apply(patter_map[result.Name],[]),1000)
+						
+						
+					}else{
+						_g.clearRect(0, 0, _rc.width, _rc.height);
+						halo.css("opacity",1).show().css({"left":0-71,"top":(posmapping[(ci+"")]*THISH/100)-71});
+						$("#wrongroutetip").show().css("opacity",1);
+						
+					}
+				}else{
+					_g.clearRect(0, 0, _rc.width, _rc.height);
+					
+					halo.css("opacity",1).show().css({"left":0-71,"top":(posmapping[(ci+"")]*THISH/100)-71});
+					$("#wrongroutetip").show();
+				}
+			}
+		}
+		
+		$("#wrongroutetip").click(function(){
+			$(this).hide();
+			$("#routetip").show();
+		})
+		$("#myCanvas").bind("touchend",mouseUpEvent);
+		var efi=false;
+		function endeffect(){
+			efi=true
+			var symble=this
+			$(".routecon").animate({"opacity":0},1000,function(){
+				$("#myCanvas").hide();
+				if(ci<5){
+					//onLoadEvent();
+					$(".routecon").css("opacity",1);
+					$(".routecon").css("background-image","none");
+					$("#goon").show().unbind().click(function(){
+						$("#world").hide();
+						$(this).hide();
+						onLoadEvent();
+						sendCommand("show_detail",{detailNum:ci-1});
+						$(".routecon").show().css({"background-image":"url('{{img_path}}img/route"+ci+".png')"});
+						halo.css("opacity",1).show().css({"left":0-71,"top":(posmapping[(ci+"")]*THISH/100)-71});
+						$("#routetip").show();
+						//
+						disableMovementCapture(1);
+					});						
+					efi=false;
+					ci++;
+					$(".itemcon").each(function(i,v){
+						if($(v).data("s")){
+							$(v).css({"opacity":0.5});
+						}
+					});
+				}else{
+					efi=false;
+					$("#sharetext").hide();
+					$(".endpage").show();
+				}
+			});
+		}
+		function drawConnectedPoint()
+		{
+			 var _p=_points[(_points.length-2)]
+			 if(_p){
+			 	_g.beginPath();
+	            _g.moveTo(_p.X, _p.Y)
+				_g.lineTo(_points[(_points.length-1)].X, _points[(_points.length-1)].Y);
+				_g.closePath();
+				_g.stroke();
+			 }
+		}
+		
+		//参加预售
+		$("#btn1").click(function(){
+			$(".endpage").hide();
+			$("#formcon").show();
+			$("body").css({"background-image":"url('img/formbg1.jpg')"});
+		});
+		var reqPhone = /^0?(13[0-9]|17[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+	    var $username=$('#uname').blur(function(){$(window).scrollTop(0)});
+	    var $province=$('#province').blur(function(){$(window).scrollTop(0)});
+	    var $city=$('#city').blur(function(){$(window).scrollTop(0)});
+	    var $phone=$('#mobile').blur(function(){$(window).scrollTop(0)});
+		//form submit
+		$("#submitbtn").bind("click",function(){
+			//$('.error-msg').addClass('hide')
+	        if($username.val()==''){
+	            //$username.siblings('.error-msg').text().removeClass('hide');
+	            $username[0].focus();
+	            $(".tiptxt",$("#formtip").show()).html("用户名不能为空！");
+	            return false;
+	        }else if($province.val()=='省份'){
+	            //$province.siblings('.error-msg').text().removeClass('hide')
+	            $province[0].focus();
+	            $(".tiptxt",$("#formtip").show()).text("请选择省份！");
+
+	            return false;
+	        }else if($city.val()=='市/区'){
+	            //$city.siblings('.error-msg').text('请选择城市！').removeClass('hide')
+	            $city[0].focus();
+	             $(".tiptxt",$("#formtip").show()).text("请选择城市！");
+	            return false;
+	        }else if($phone.val()==""|| !reqPhone.test($phone.val())){
+	            //$phone.siblings('.error-msg').text('请输入合法的手机号码！').removeClass('hide');
+	            $phone[0].focus();
+	            $(".tiptxt",$("#formtip").show()).text("请输入合法的手机号码！");
+	            return false;
+	        }else{
+				var data = {username:$username.val(),province:$province.val(),city:$city.val(),phone:$phone.val(),gender:$("#sex").val()?"男":"女",source:'mobile-launch',callback:'callback'};
+				_smq.push(['custom','填写信息_提交',$username.val(),$phone.val()]);
+				var url = 'http://special.mercedes-benz.com.cn/NewC-Class/pre-sale/deal_jsonp.php';
+				$.ajax({
+					type: "POST",
+					url: url,
+					data: data,
+					dataType: "jsonp",
+					success: function(data){
+						if(data.code==1){
+							
+						}else{
+							alert(data.msg);
+						}
+					}
+				});
+	        }
+		});
+		$("#formtip").unbind().click(function(){
+			$(this).hide();
+		});
+		
+		$("#sexmale").bind("click",function(){
+								this.src="{{img_path}}img/btnrd_s.png";
+								$("#sexfemale").attr("src","img/btnrd_u.png")
+								$("#sex").attr("value",1);
+							});
+							$("#sexfemale").bind("click",function(){
+								this.src="{{img_path}}img/btnrd_s.png";
+								$("#sexmale").attr("src","img/btnrd_u.png")
+								$("#sex").attr("value",0);
+							});
+		function callback(res){
+			if(res.code){
+				$("body").css({"background-image":"url('img/bg_l.jpg')"});
+				var name=$('#uname').val()
+				var phone=$("#mobile").val()
+				_smq.push(['custom','参加预售_提交_M',name,phone]);
+				$("#formtip .tiptxt").text("提交成功");
+				$("#formtip").show().unbind().click(function(){
+					$(".endpage").show();
+					$("#formcon").hide();
+					$(this).hide();
+				});
+			}else{
+				$("#formtip .tiptxt").text("请重新提交");
+			}
+		}
+		//reset
+		$("#resetbtn").bind("click",function(){
+			$("#uname,#mobile").attr("value","");
+			$("#proveice option").first().attr("selected",true);
+			$("#city option").first().attr("selected",true);
+			$("#sexmale").trigger("tapone")
+		});
+		
+		
+  weichat();
+  </script>
+  <script type="text/javascript">
+		$(function(){
+			$("#formcon .close").click(function(){
+				$("body").css({"background-image":"url('img/bg_l.jpg')"});
+				$("#formcon").fadeOut();
+				$(".endpage").fadeIn();
+				})
+			})
+		function stopEvent(e){
+				e.preventDefault();
+				e.stopPropagation();
+			}
+		</script>
+  <script src="{{img_path}}js/holobox.js"></script>
+  <div style="display: none">
+	    <script src="http://exp.jiankongbao.com/loadtrace.php?host_id=13168&style=1&type=0" type="text/javascript"></script>
+	</div>
+	
+		<script type="text/javascript">
+			var _smq = _smq || [];
+			_smq.push(['_setAccount', '3aad93d', new Date()]);
+			_smq.push(['_setReferrerSmtEnabled', 'yes']);
+			_smq.push(['pageview']);
+			
+			(function() {
+			var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+			sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/collect.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+			})();
+		</script>
+	<!--GA监控代码-->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-18423838-20', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

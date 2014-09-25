@@ -1,0 +1,36 @@
+<htmL>
+<head>
+		<meta charset="utf-8">
+		<title>benz</title>
+		<meta name="viewport" content="width=devicewidth">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main_pc.css">
+	<body>
+<form id="form" method="post" action="form_endpoint" url="#" style="width:100%;height:100%;">
+	<!--name-->
+	<input type="text" id="uname" name="uname" style="position:absolute;width:24%;height:7%;left:21%;top:34%;color:#fff;background:none;border:none;"/>
+	<!--mobile-->
+	<input type="text" id="mobile" name="mobile" style="position:absolute;width:25%;height:7%;left:65.5%;top:46%;color:#fff;background:none;border:none;"/>
+	<!--province-->
+	<select id="province" style="position:absolute;left:21.12%;top:46%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;">
+		<option value="0">请选择</option>
+		<option value="1">上海市</option>
+	</select>
+	<!--city-->
+	<select id="city" style="position:absolute;left:34.68%;top:46%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;">
+		<option value="0">请选择</option>
+		<option value="1">上海市</option>
+	</select>
+	<!--sex radio-->
+	<img id="sexmale" src="img/btnrd_s.png" style="position:absolute;top:34.7%;left:65%"/>
+	<img id="sexfemale" class="" src="img/btnrd_u.png" style="position:absolute;top:34.7%;left:76%"/>
+	<input id="sex" type="hidden" name="sex" value="1" />
+	<!--submit button-->
+	<input id="submitbtn" type="submit" value="" style="position:absolute;width:48%;height:11.8%;left:8.5%;top:76.7%;opacity:0;"/>
+	<!--reset button-->
+	<input id="resetbtn" type="button" style="position:absolute;width:33%;height:11.8%;left:58%;top:76.7%;opacity:0;"/>
+	<!--share button-->
+	<div id="shareinform" style="width:68px;height:48px;position:absolute;top:0;left:0;"></div>
+</form>
+</body>
+</htmL>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>全新梅赛德斯-奔驰长轴距C级车  驾驭改变</title>
+		<meta name="description" content=""/>
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" /> -->		
+		<link rel="stylesheet" href="css/jpreloader.css" />
+		<link rel="stylesheet" type="text/css" href="css/final.css">
+		<link href="css/video-js.css" rel="stylesheet" type="text/css">
+		<!--<link rel="stylesheet" type="text/css" href="css/animation.css">-->	
+		<script src="js/c-class/jquery.min.js"></script>
+		<script src="js/c-class/index.load.js"></script>
+		<!--[if lt IE 9]>
+		<script src="js/c-class/html5.js"></script>
+		<![endif]-->
+		<script src="js/c-class/jpreloader.js"></script>
+		<script src="js/c-class/img.widthauto.js"></script>
+		<script src="js/c-class/index.js"></script>
+		<script src="js/c-class/video.js"></script>
+		<script>
+  			videojs.options.flash.swf = "swf/video-js.swf";
+		</script>
+		<style>
+			.submit .man_bg{width:20px; height:20px;position: absolute; left: 97px; top: 173px; background:url(../images/radio_icon.png) no-repeat; display:block; } 
+			.submit .woman_bg{width:20px; height:20px;position: absolute; left: 161px; top: 173px; background:url(../images/radio_icon.png) no-repeat; display: none; } 
+			
+			/* footer  */
+			#menu{ width:986px; height:34px; background:url(../images/menu.png) no-repeat; position:fixed; z-index:99999998; left:50%; margin-left:-493px; bottom:43px;}
+			#menu .home{background:url(../images/nav/home.png) no-repeat; width: 68px;margin-left: ; }
+			#menu .v1{background:url(../images/nav/v1.png) no-repeat; width: 34px; margin-left: ; }
+			#menu .v2{background:url(../images/nav/v1.png) no-repeat; width: 34px; margin-left: ; }
+			#menu .v3{background:url(../images/nav/v1.png) no-repeat; width: 34px; margin-left: ; }
+			#menu .v4{background:url(../images/nav/v1.png) no-repeat; width: 34px; margin-left: ; }
+			#menu .v5{background:url(../images/nav/v1.png) no-repeat; width: 34px; margin-left: ; }
+			#menu .v6{background:url(../images/nav/v1.png) no-repeat; width: 34px; margin-left: ; }
+			#menu .v7{background:url(../images/nav/v1.png) no-repeat; width: 34px; margin-left: ; }
+			#menu .testdrive1{background:url(../images/nav/testdrive.png) no-repeat; width: 136px; margin-left: ; }
+			#menu .wonderful{background:url(../images/nav/wonderful.png) no-repeat; width: 136px; margin-left: ; }
+			#menu .wonderful2{background:url(../images/nav/wonderful.png) no-repeat; width: 136px; position:absolute; right:412px; top:0;}
+			#menu .config{background:url(../images/nav/config.png) no-repeat; width: 136px;}
+			#menu .ipo{background:url(../images/nav/ipo.png) no-repeat; width: 136px;}
+			#menu .screen{width: 136px;background:url(../images/nav/ipo.png) no-repeat;}
+			
+		</style>
+</head>
+
+<body>
+	<div class="section" id="section1">
+            <section class="panel slide" id="slide0">
+			<img src="images/text/0_1.png" class="text">
+			<img src="images/text/0_2.png" class="text2">
+			<img src="images/video0.jpg" class="b_img">
+			<div class="tip_scroll"><img src="images/scroll_tip.png"></div>
+			</section>
+
+		<!--序列帧 1-->
+            <section  class="slide panel" id="slide1" >
+				<div class="pos">
+					<img src="images/video1.jpg" class="img2"  >
+						<div class="icon_Item">
+						<div class="icon0"><a href="javascript:void(0)">+</a><span><img src="images/text/1_1_1.png" alt=""></span></div>
+					</div>
+				</div>
+		
+				<img src="images/text/1_1.png" class="text3">
+				<div class="text4" ><img src="images/text/1_2.png"></div>
+
+			</section>
+		<!--序列帧 01 end-->
+        
+        
+
+		<!--序列帧 02-->
+			<section class="panel slide"  id="slide2" >
+				<img src="images/video2.jpg" class="b_img">
+				<img src="images/text/2_1.png" class="text3" >
+				<div class="text4">
+					<img src="images/text/2_2.png" class="" >
+					<!--<div class="bg"></div> -->				
+				</div>
+				<!--<section class="panel panel2_2"  data-section-name="panel2_1">
+				<img src="images/text/2_2_1.png" class="text3" >
+				<img src="images/text/2_2_2.png" class="text4" >
+				</section>-->	
+			</section>	
+			
+					
+		<!--序列帧 02 end-->
+			
+		<!--序列帧 03-->
+			<section class="panel slide" id="slide3">
+				<div class="pos">
+					<img src="images/video3.jpg" class="img2"  >
+					<div class="icon_list">
+						<div class="icon"><a href="javascript:void(0)">+</a><span><img src="images/text/3_2_1.png" alt=""></span></div>
+						<div class="icon2"><a href="javascript:void(0)">+</a><span><img src="images/text/3_2_2.png" alt=""></span></div>
+						<div class="icon3"><a href="javascript:void(0)">+</a><span><img src="images/text/3_2_3.png" alt=""></span></div>
+						<div class="icon4"><a href="javascript:void(0)">+</a><span><img src="images/text/3_2_4.png" alt=""></span></div>
+					</div>
+				</div>
+				<img src="images/text/2_1.png" class="text3">
+				<img src="images/text/2_2.png" class="text4">
+			</section>
+		<!--序列帧 03 end-->	
+
+		<!--序列帧 04-->	
+			<section class="panel slide" id="slide4" >
+				<img src="images/video4.jpg" class="b_img">
+				<img src="images/text/4-1.png" class="text3">
+				<img src="images/text/4-2.png" class="text4">
+			</section>
+		<!--序列帧 04 end-->
+
+		<!--序列帧 05-->	
+			<section class="panel slide" id="slide5">
+				<div class="pos">
+					<img src="images/video5.jpg"  class="img2"  >
+					<div class="icon_list2">
+						<div class="icon5"><a href="javascript:void(0)">+</a><span><img src="images/text/5-2-1.png" alt=""></span></div>
+					</div>
+				</div>
+				<img src="images/text/5-1.png" class="text3">
+				<img src="images/text/5-2.png" class="text4">
+			</section>	
+		<!--序列帧 05 end-->	
+			
+		<!--序列帧 06-->	
+			<section class="panel slide" id="slide6">
+				<div class="pos">
+					<img src="images/video6.jpg"  class="img2"  >
+					<div class="icon_list2">
+						<div class="icon6"><a href="javascript:void(0)">+</a><span><img src="images/text/6-2-1.png" alt=""></span></div>
+					</div>
+				</div>
+				<img src="images/text/6-1.png" class="text3">
+				<img src="images/text/5-2.png" class="text4" >
+			</section>
+		<!--序列帧 06 end-->	
+
+		<!--序列帧 07-->	
+			<section class="panel slide" id="slide7">
+				<div class="pos">
+					<img src="images/video7.jpg" class="img2" >
+					<a class="replay" href="#firstPage/1"></a>
+					<a class="testdrive" href="#firstPage/8"></a>
+				</div>
+			</section>
+		<!--序列帧 07 end-->	
+
+		<!--序列帧 08-->	
+			<section class="panel slide" id="slide8" >
+				<div class="pos">
+					<img src="images/video9.jpg" class="img2" >
+					<a class="replay" href="#" data-menu-top="0"></a>
+					<a class="testdrive" href="javascript:void(0)"></a>
+				</div>
+				<div class="submit">
+					<span class="man_bg"></span>
+					<span class="woman_bg"></span>	
+					<img src="images/summit.png" class="" >
+					<input class="name" type="text" />
+					<input type="radio" name="gender" class="man" />
+					<input type="radio" name="gender" class="woman" />
+					<select id="province"></select>
+					<select id="city"></select>
+					<span class="province_bg"></span>
+					<span class="city_bg"></span>
+					<input class="mobile" type="text" />
+					<a id="submit"></a>
+				</div>
+			</section>
+		<!--序列帧 08 end-->	
+
+		<!--序列帧 09-->	
+			<section class="panel slide" id="slide9" >
+				<img src="images/video9.jpg" class="b_img" >
+				<div class="video_list">
+					<a href="javascript:void(0)" title="http://video-js.zencoder.com/oceans-clip.mp4" alt="http://video-js.zencoder.com/oceans-clip.png" class="v1"><img src="images/text/9-1.jpg" class="img" ></a>	
+					<a href="javascript:void(0)" title="http://video-js.zencoder.com/oceans-clip.mp4" alt="http://video-js.zencoder.com/oceans-clip.png" class="v2"><img src="images/text/9-2.jpg" class="img" ></a>	
+					<a href="javascript:void(0)" title="http://video-js.zencoder.com/oceans-clip.mp4" alt="http://video-js.zencoder.com/oceans-clip.png" class="v3"><img src="images/text/9-3.jpg" class="img" ></a>	
+				</div>	
+				<div class="nav9"><a class="wonderful" href="#firstPage/10"></a><img src="images/text/9-nav.png" class="" ></div>
+
+			</section>
+		<!--序列帧 09 end-->	
+		<!--序列帧 10-->	
+			<section class="panel slide" id="slide10" >
+				<img src="images/video9.jpg" class="b_img" >
+				<div class="wallpaper_list">
+					<a href="javascript:void(0)" class="w1"><img src="images/bz1.jpg" class="img" ><span class="h"><i></i><img src="images/down.png"></span></a>	
+					<a href="javascript:void(0)" class="w2"><img src="images/bz2.jpg" class="img" ><span class="h"><i></i><img src="images/down.png"></span></a>	
+					<a href="javascript:void(0)" class="w3"><img src="images/bz3.jpg" class="img" ><span class="h"><i></i><img src="images/down.png"></span></a>	
+					<a href="javascript:void(0)" class="w4"><img src="images/bz4.jpg" class="img" ><span class="h"><i></i><img src="images/down.png"></span></a>	
+				</div>	
+				<div class="nav10"><a class="wonderful" href="#firstPage/9"></a><img src="images/text/10-nav.png" class="" ></div>
+			</section>
+		<!--序列帧10 end-->	
+		
+		<!--序列帧 11-->	
+			<section class="panel slide" id="slide11" >
+				<img src="images/video9.jpg" class="b_img" >
+				<div class="config"><img src="images/config.png"></div>
+			</section>
+		<!--序列帧 11 end-->	
+		
+		<!--序列帧 12-->	
+			<section class="panel slide" id="slide12" >	
+				<div class="time_count ">
+				<div class="colockbox" id="colockbox1">  <span class="hour">00</span> <span class="minute">00</span> <span class="second">00</span> </div>
+					<img src="images/video12-time.png">
+				</div>	
+				<img src="images/video12.jpg" class="b_img" >
+			</section>
+		<!--序列帧 12 end-->	
+		
+		<!--序列帧 13-->	
+			<section class="panel slide" id="slide13" >		
+				<img src="images/video9.jpg" class="b_img" >
+				<iframe id="ipo_video" src="" width="752" height="423" scrolling="no" frameborder="0" ></iframe>
+			</section>
+		<!--序列帧 13 end-->			
+	</div>
+	
+    
+    
+		<!--头部开始-->
+		<div id="logo"><a href="#"><img src="images/logo.png"></a><a href="#" class="logo2"><img src="images/logo2.png"></a></div>
+
+		<!--序列帧开始-->
+		
+
+		
+		
+		<!--弹出层-->
+		<div class="pop_list">
+			<div class="mask"></div>
+			<div class="info"><a class="close"><img src="images/close.png" class="" ></a>
+			<div class="info_f"><img src="images/big/2.jpg" class="" ></div>
+			<div class="info_f"><img src="images/big/3.jpg" class="" ></div>
+			<div class="info_f"><img src="images/big/4.jpg" class="" ></div>
+			<div class="info_f"></div>
+			<div class="info_f"><img src="images/big/5.jpg" class="" ></div>
+			<div class="info_f"><img src="images/big/6.jpg" class="" ></div>
+			<div class="icon0"><img src="images/big/1.jpg" class="" ></div>
+			</div>
+		</div>
+		
+		<div id="video_play">
+			<div class="mask"></div>	
+			<div class="video">
+				
+			</div>
+		</div>
+		
+		底部开始
+		<div id="menu">
+			<a class="home" href="#firstPage/0" class="select2"></a>
+			<a class="v1" href="#firstPage/1"</a>
+			<a class="v2" href="#firstPage/2"></a>
+
+			<a class="v3" href="#firstPage/3"></a>
+
+			<a class="v4" href="#firstPage/4"></a>
+
+			<a class="v5" href="#firstPage/5"></a>
+
+			<a class="v6" href="#firstPage/6"></a>
+
+			<a class="v7" href="#firstPage/7"></a>
+
+			<a class="testdrive1" href="#firstPage/8"></a>
+
+			<a class="wonderful" href="#firstPage/9"></a>
+			<a class="wonderful2" href="#firstPage/9"></a>
+
+			<a class="config" href="#firstPage/11"></a>
+			<a class="ipo" href="#firstPage/12"></a>
+			<a class="screen" href="/simple" target=""></a>
+
+		</div>
+		
+		<div id="footer2"><img src="images/music.png" class="music">
+			<div class="share">
+				分享到<a href="" class="share_sina"><img src="images/sina.png"></a>
+						<a href="" class="share_weibo"><img src="images/t_weibo.png"></a>
+						<a href="" class="share_renren"><img src="images/renren.png"></a>
+			</div>
+			<div class="nav">
+				<a href="http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/passengercars.flash.skipintro.html" target="_blank">奔驰官网</a>|
+				<a href="http://contact.mercedes-benz.com.cn/dealer_cn.html" target="_blank">经销商查询</a>|
+				<a href="http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/orivacy_statement.ngrb.html" target="_blank">隐私条款</a>|
+				<a href="http://www.miibeian.gov.cn/" target="_blank" >京ICP备09046804</a>|
+				<a href="http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/legal_notice.ngrb.html" target="_blank">法律申明</a>
+			</div>
+		</div>
+	
+	<link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css" />
+
+
+		<!--[if IE]>
+			<script type="text/javascript">
+				 var console = { log: function() {} };
+			</script>
+		<![endif]-->
+		<script src="js/citys.js"></script>
+		<script src="js/fullpage/jquery.ui.js"></script>
+		<script type="text/javascript" src="js/fullpage/jquery.fullPage.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+					sectionsColor: ['#0000', '#0000', '#0000'],
+					scrollOverflow: false,
+
+				});
+			//$.fn.fullpage.moveSlideLeft();
+
+			});
+		</script>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/c-class/skrollr.ie.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+
+		//img width auto
+		$(window).load(function() {
+			$(".b_img").fullBg();
+		});				
+		</script>	
+		<script type="text/javascript">
+			var sns_title="全新梅赛德斯-奔驰长轴距C级车,驾驭改变";
+			var sns_text="互联时代，奔驰邀你体验不一样的！创新双屏互动，刷新你的感官体验！驾驭改变！全新梅赛德斯-奔驰长轴距C级车，预售现已开启！C you soon! ";
+			var sns_url="http://special.mercedes-benz.com.cn/NewC-Class/";
+			function weibo(){
+				var _url="http://v.t.sina.com.cn/share/share.php?&searchPic=false";
+				_url+=("&url="+encodeURI(sns_url));
+				_url+=("&title="+encodeURI(sns_text));
+				//_url+="&pic=http://"+location.host+"/img/share.jpg";
+				//hard code pic url
+				_url+="&pic=http://c-class.mymb.com.cn/img/share.jpg";
+				window.open(_url,"_blank");
+			}
+			function tencent(){
+				var _url="http://v.t.qq.com/share/share.php?";
+				_url+=("&url="+encodeURI(sns_url));
+				_url+=("&title="+encodeURI(sns_text));
+				//_url+="&pic=http://"+location.host+"img/share.jpg";
+				//hard code pic url
+				_url+="&pic=http://c-class.mymb.com.cn/img/share.jpg";
+
+				window.open(_url,"_blank");
+			}
+			function renren(){
+				var _url="http://widget.renren.com/dialog/share?charset=UTF-8";
+				_url+=("&resourceUrl="+encodeURI(sns_url));
+				_url+=("&srcUrl="+encodeURI(sns_url));
+				_url+=("&title="+encodeURI(sns_title));
+				_url+=("&description="+encodeURI(sns_text));				
+				//_url+="&pic=http://"+location.host+"img/share.jpg";
+				//hard code pic url
+				_url+="&pic=http://c-class.mymb.com.cn/img/share.jpg";
+				window.open(_url,"_blank");
+			}
+
+			$(".share_sina").click(function(){
+				weibo()
+			})	
+			$(".share_weibo").click(function(){
+				tencent()
+			})	
+			$(".share_renren").click(function(){
+				renren()
+			})				
+		</script>
+
+
+
+
+</body>
+</html>

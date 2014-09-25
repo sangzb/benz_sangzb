@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>全新梅赛德斯-奔驰长轴距C级车 驾驭改变</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-touch-fullscreen" content="yes">
+    	<meta id="VIEWPORT" name="viewport" content="width=device-width,maximum-scale=1.0,minimal-ui">
+    	<style type="text/css">
+    		html,body{margin:0;width:100%;height:100%;overflow:hidden;}
+    		#outercon{position:absolute;width:100%;left:0px;height:100%;top:0px;}
+    		#content{height:100%;width:100%;position:absolute;top:0px;left:0px;overflow:hidden;}
+    		.contentitem{width:100%;height:50%;background-repeat:no-repeat;background-position:center center;background-size:100% 100%;position:relative;}
+    		.innertext{position:absolute;z-index:2;}
+    	</style>
+    	<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<body style="width:100%;height:100%;background:#000 url('img/bg_l.jpg') no-repeat center center;background-size:auto 100%">
+		<div id="outercon">
+			<div id="content" style="background:url('img/bg1.jpg') no-repeat center center;background-size:100% 100%;">
+				<!--top logo-->
+				<img id="logo" src="img/logo.png" style="position:absolute;top:5.6%;left:2%;z-index:2;">
+				<!--bottom logo-->
+				<img id="logotext" src="img/logotext.png" style="position:absolute;bottom:5.6%;left:2%;z-index:2;">
+				<!--buttons container-->
+				<div id="btns" style="width:32.57%;height:41.56%;background:url('img/btns.png') no-repeat center center;background-size:100% 100%;position:absolute;bottom:0;right:0;z-index:2;">
+					<!--精彩影音-->
+					<a href="{{img_path}}resource/video.mp4" style="position:absolute;width:44%;height:40%;left:0;top:60%;"></a>
+					<a id="gotoform" target="_blank" style="position:absolute;width:44%;height:40%;left:48.6%;top:60%;"></a>
+				</div>
+				<!--<img id="sharetext" src="img/sharetext.png" style="position:absolute;position:absolute;bottom:5.6%;left:2%;z-index:2;"/>-->
+				<!--down arrow-->
+				<img id="arrow" src="img/arrow.png" style="position:absolute;bottom:5%;left:47%;z-index:2;"> 
+				<!--content-->
+				<div id="main" style="width:100%;height:200%;position:absolute;top:0px;left:0px;z-index:1;">
+					<div id="content_1" class="contentitem" style="background-image:url('img/i1.jpg');">
+						<img class="innertext" src="img/i1_t.png" style="width:100%;top:68.4%;left:0;">
+					</div>
+					<div id="content_2" class="contentitem" style="background-image:url('img/i2.jpg');">
+						<img class="innertext" src="img/i2_t.png" style="left:8.6%;top:21%;width:20%;"/>
+					</div>
+					<div id="content_3" class="contentitem" style="background-image:url('img/i3.jpg');">
+						<img class="innertext" src="img/i3_t.png" style="left:44%;top:13%;width:51.26%"/>
+						<img id="img3_1" src="img/i3_1.png" style="width:100%;height:100%;position:absolute;z-index:2;top:0;left:0;opacity:0"/>
+					</div>
+					<div id="content_4" class="contentitem" style="background-image:url('img/i4.jpg');">
+						<img class="innertext" src="img/i4_t.png" style="left:52%;top:27%;width:32.77%;"/>
+						<img class="innertext" id="img4_1" src="img/i4_1.png" style="left:0px;top:73%;opacity:0;width:100%;"/>
+					</div>
+					<div id="content_5" class="contentitem" style="background-image:url('img/i5.jpg');">
+						<img class="innertext" src="img/i5_t.png" style="left:9%;top:18%;width:27.45%;"/>
+						<img id="img5_1" src="img/i5_1.png" style="opacity:0;width:100%;"/>
+						<div id="div5_1" style="position:absolute;width:38%;height:60%;z-index:2;left:50%;top:21%;"></div>
+					</div>
+					<div id="content_6" class="contentitem" style="background-image:url('img/i6.jpg');background-size:100%;auto;">
+						<img class="innertext" src="img/i6_t.png" style="left:66%;top:20%;width:30.11%"/>
+						<img id="img_61" src="img/i6_1.png" style="position:absolute;top:0px;left:0px;opacity:0;width:100%;z-index:2;" />
+					</div>
+					
+					<div id="content_7" class="contentitem" style="background-image:url('img/formbg.jpg');">
+							<div id="formtip" style="z-index:999;position:absolute;width:44%;height:33%;left:28%;top:33%;display:none;background:url('img/popupcon.png') no-repeat center center;background-size:100% 100%;color:#fff;">
+								<div class="tiptxt" style="width:100%;text-align:center;margin-top:10%;"></div>
+							</div>
+							<!--name-->
+							<input type="text" id="uname" name="uname" style="position:absolute;width:24%;height:7%;left:21%;top:41.76%;color:#fff;background:none;border:none;"/>
+							<!--mobile-->
+							<input type="text" id="mobile" name="mobile" style="position:absolute;width:25%;height:7%;left:65.5%;top:53.4%;color:#fff;background:none;border:none;"/>
+							<!--province-->
+							<select id="province" name="province" style="position:absolute;left:21.12%;top:53.4%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;"></select>
+							<!--city-->
+							<select id="city" name="city" style="position:absolute;left:34.68%;top:53.4%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;"></select>
+							<!--sex radio-->
+							<img id="sexmale" src="img/btnrd_s.png" style="position:absolute;top:42.5%;left:65.5%"/>
+							<img id="sexfemale" class="" src="img/btnrd_u.png" style="position:absolute;top:42.5%;left:76.5%"/>
+							<input id="sex" type="hidden" name="sex" value="1" />
+							<!--submit button-->
+							<input id="submitbtn" type="button" value="" style="position:absolute;width:48%;height:11.8%;left:8.5%;top:80.96%;opacity:0;"/>
+							<!--reset button-->
+							<input id="resetbtn" type="button" style="position:absolute;width:33%;height:11.8%;left:58%;top:80.96%;opacity:0;"/>
+							<!--share button-->
+							<!--<div id="sharetext" style="width:68px;height:48px;position:absolute;top:0;left:0;"></div>-->
+
+					</div>
+					<div id="content_8" class="contentitem">
+						<div class="contentitem" style="width:84%;height:50%;position:absolute;background-image:url('img/endbg.png');left:8%;top:25%;">
+							<!--share button-->
+							<div id="sharebtn" style="position:absolute;left:45.27%;top:36%;width:26.36%;height:17.26%;background-size:100% 100%;"></div>
+							<!--return back button-->
+							<div id="returnbtn" style="position:absolute;left:73.32%;top:36%;width:26.36%;height:17.26%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/deviceadaptor.js"></script>
+		<script type="text/javascript" src="js/jgestures.min.js"></script>
+		<script type="text/javascript" src="js/cities.js"></script>
+        <script type="text/javascript">
+			var CP=1;
+			var colorbg=0;
+			var isAni=false;
+			$("#content").bind("swiperightup",swipermove).bind("swipeleftup",swipermove).bind("swipeup",{"d":1},swipermove);
+			$("#content").bind("swiperightdown",swipermove).bind("swipeleftdown",swipermove).bind("swipedown",{"d":0},swipermove);
+			$("body").bind("touchmove",function(e){e.stopPropagation();e.preventDefault();});
+			
+			$("#gotoform").click(function(){
+				CP=7;
+				$("#main").stop().animate({"top":(CP-1)*-THISH});
+				$("#btns,#arrow,#sharetext").hide();
+			})
+			
+			function swipermove(e){
+				if(!isAni){
+					console.log(e.type)
+					if(e.type.indexOf("up")>0){
+						CP++;
+					}else{
+						CP--;
+					}
+
+					if(CP>8 || CP<1){
+
+						return;
+					}else{
+						$("#content_2").unbind();
+						$("#img_2").unbind().remove();
+						
+						$("#img4_1").css({"opacity":0});
+						$("#img5_1").css({"opacity":0});
+						$("#div5_1").unbind();
+						$("#img_61").css("opacity",0);
+						$("#content_6").unbind();
+						$("#resetbtn").trigger("tapone").unbind();
+						$("#shareinform").unbind();
+						//$("#snsbtn").unbind();
+					}
+					isAni=true;
+					$("body").css({"background-image":"url('img/bg_l.jpg')"});
+					$("#main").stop().animate({"top":(CP-1)*-THISH},function(){
+						isAni=false;
+						$("#logotext,#btns,#arrow,#log,#sharetext").show();
+						if(CP==2){
+							$("#content_2").append($("<img id=\"img_2\" src=\"img/i2_1.jpg\"  style=\"position:absolute;top:0px;left:0px;width:100%;\" />").css("opacity",0))
+							
+								$("#img_2").animate({"opacity":1},function(){
+									$("#img_2").data("s",true)
+									$("#content_2").bind("tapone",function(){
+										var tar=$("#img_2");
+										if(tar.data("s")){
+											tar.data("s",false);
+											tar.stop().animate({"opacity":0});
+										}else{
+											tar.data("s",true);
+											tar.stop().animate({"opacity":1});
+										}
+									});
+								})
+							
+						}else if(CP==3){
+							setTimeout(function(){$("#img3_1").animate({"opacity":1})},200)
+						}else if(CP==4){
+							setTimeout(function(){$("#img4_1").animate({"opacity":1})},200);
+						}else if(CP==5){
+							setTimeout(function(){
+								$("#img5_1").animate({"opacity":1});
+								$("#div5_1").bind("tapone",function(){
+									var tar=$("#img5_1");
+									if(tar.data("s")){
+										tar.data("s",false);
+										tar.stop().animate({"opacity":1});
+									}else{
+										tar.data("s",true);
+										tar.stop().animate({"opacity":0});
+									}
+								});
+							},200);
+						}else if(CP==6){
+							$("#img_61").animate({"opacity":1});
+							colorbg=1;
+							$("#content_6").click(function(){
+								colorbg++;
+								if(colorbg>4){
+									colorbg=0;
+								}
+								if(colorbg){
+									$("#img_61").stop().animate({"opacity":0},function(){
+										$("#img_61").attr("src","img/i6_"+colorbg+".png").animate({"opacity":1});
+									})
+								}else{
+									$("#img_61").stop().animate({"opacity":0},function(){})
+								}
+	
+							})
+						}else if(CP==7){
+							$("body").css({"background-image":"url('img/formbg1.jpg')"});
+							$("#sharetext,#btns,#arrow").hide();
+							$("#sexmale").bind("tapone",function(){
+								this.src="img/btnrd_s.png";
+								$("#sexfemale").attr("src","img/btnrd_u.png")
+								$("#sex").attr("value",1);
+							});
+							$("#sexfemale").bind("tapone",function(){
+								this.src="img/btnrd_s.png";
+								$("#sexmale").attr("src","img/btnrd_u.png")
+								$("#sex").attr("value",0);
+							});
+							var reqPhone = /^0?(13[0-9]|17[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+						    var $username=$('#uname').blur(function(){$(window).scrollTop(0)});
+						    var $province=$('#province').blur(function(){$(window).scrollTop(0)});
+						    var $city=$('#city').blur(function(){$(window).scrollTop(0)});
+						    var $phone=$('#mobile').blur(function(){$(window).scrollTop(0)});
+							//form submit
+							$("#submitbtn").bind("tapone",function(){
+								
+								var reqPhone = /^0?(13[0-9]|17[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+							    var $username=$('#uname').blur(function(){$(window).scrollTop(0)});
+							    var $province=$('#province').blur(function(){$(window).scrollTop(0)});
+							    var $city=$('#city').blur(function(){$(window).scrollTop(0)});
+							    var $phone=$('#mobile').blur(function(){$(window).scrollTop(0)});
+								//$('.error-msg').addClass('hide')
+						        if($username.val()==''){
+						            //$username.siblings('.error-msg').text().removeClass('hide');
+						            $username[0].focus();
+						            $(".tiptxt",$("#formtip").show()).html("用户名不能为空！");
+						            return false;
+						        }else if($province.val()=='省份'){
+						            //$province.siblings('.error-msg').text().removeClass('hide')
+						            $province[0].focus();
+						            $(".tiptxt",$("#formtip").show()).text("请选择省份！");
+						            return false;
+						        }else if($city.val()=='市/区'){
+						            //$city.siblings('.error-msg').text('请选择城市！').removeClass('hide')
+						            $city[0].focus();
+						            $(".tiptxt",$("#formtip").show()).text("请选择城市！");
+						            return false;
+						        }else if($phone.val()==""|| !reqPhone.test($phone.val())){
+						            //$phone.siblings('.error-msg').text('请输入合法的手机号码！').removeClass('hide');
+						            $phone[0].focus();
+						             $(".tiptxt",$("#formtip").show()).text("请输入合法的手机号码！");
+						            return false;
+						        }else{
+									var data = {username:$username.val(),province:$province.val(),city:$city.val(),phone:$phone.val(),gender:$("#sex").val()?"男":"女",source:'pc',callback:'callback'};
+									//_smq.push(['custom','填写信息_提交',$username.val(),$phone.val()]);
+									var url = 'http://special.mercedes-benz.com.cn/NewC-Class/pre-sale/deal_jsonp.php';
+									$.ajax({
+										type: "POST",
+										url: url,
+										data: data,
+										dataType: "jsonp",
+										success: function(data){
+											if(data.code==1){
+												
+											}else{
+												alert(data.msg);
+											}
+										}
+									});
+						        }
+							});
+							
+							$("#resetbtn").bind("tapone",function(){
+								$("#uname,#mobile").attr("value","");
+								$("#proveice option").first().attr("selected",true);
+								$("#city option").first().attr("selected",true);
+								$("#sexmale").trigger("tapone")
+							});
+							//$("#shareinform").bind("tapone",function(){alert("share")})
+						}else if(CP==8){
+							$("#logotext").show();
+							/*
+							$("#snsbtn").bind("tapone",function(){
+								alert("share")
+							});
+							*/
+							
+							$("#returnbtn").bind("tapone",function(){
+								$("#content_2").unbind();
+								$("#img_2").unbind().remove();
+								
+								$("#img4_1").css({"opacity":0});
+								$("#img5_1").css({"opacity":0});
+								$("#div5_1").unbind();
+								$("#img_61").css("opacity",0);
+								$("#content_6").unbind();
+								$("#resetbtn").trigger("tapone").unbind();
+								//$("#shareinform").unbind();
+								$("#snsbtn").unbind();
+								$(this).unbind();
+								
+
+								$("#content_8").animate({"opacity":0},function(){
+									$("#main").css("top",0);
+									$(this).css("opacity",1);
+									isAni=true;
+									$("#content_1").css("opacity",0).animate({"opacity":1},function(){
+										isAni=false;
+									});
+									$("#logotext,#btns,#arrow").show();
+									CP=1;
+								})
+							})
+						}
+					});
+				}
+			}
+			$("#formtip").unbind().click(function(){
+				$(this).hide();
+			});
+			function callback(res){
+				if(res.code){
+					$("#formtip .tiptxt").text("提交成功");
+					$("#formtip").show().unbind().click(function(){
+						$("#content").trigger("swipeup");
+						$(this).hide();
+					});
+				}else{
+					$("#formtip .tiptxt").text("请重新提交");
+				}
+			}
+
+		</script>
+		<div style="display: none">
+		    <script src="http://exp.jiankongbao.com/loadtrace.php?host_id=13168&style=1&type=0" type="text/javascript"></script>
+		</div>
+		<script type="text/javascript">
+		var _smq = _smq || [];
+		_smq.push(['_setAccount', '2ab3cc9', new Date()]);
+		_smq.push(['_setDirectoryIndex', 'index.html']);
+		_smq.push(['pageview']);
+		
+		(function() {
+		var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+		sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/collect.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+		})();
+		</script>
+
+	</body>
+</html>

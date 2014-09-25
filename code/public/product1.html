@@ -1,0 +1,232 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-touch-fullscreen" content="yes">
+    	<meta id="VIEWPORT" name="viewport" content="width=device-width,maximum-scale=1.0,minimal-ui">
+    	<style type="text/css">
+    		html,body{margin:0;width:100%;height:100%;overflow:hidden;}
+    		#outercon{position:absolute;width:100%;left:0px;height:100%;top:0px;}
+    		#content{height:100%;width:100%;position:absolute;top:0px;left:0px;overflow:hidden;}
+    		.contentitem{width:100%;height:50%;background-repeat:no-repeat;background-position:center center;background-size:100% auto;position:relative;}
+    		.innertext{position:absolute;z-index:2;}
+    	</style>
+
+    	<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="outercon">
+			<div id="content" style="background:url('img/bg1.jpg') no-repeat center center;background-size:100% auto;">
+				<!--top logo-->
+				<img id="logo" src="img/logo.png" style="position:absolute;top:4%;left:2%;z-index:2;">
+				<!--bottom logo-->
+				<img id="logotext" src="img/logotext.png" style="position:absolute;bottom:4%;left:2%;z-index:2;">
+				<!--buttons container-->
+				<div id="btns" style="width:185px;height:133px;background:url('img/btns.png');position:absolute;bottom:0px;right:0px;z-index:2;">
+					<div style=""></div>
+				</div>
+				<!--down arrow-->
+				<img id="arrow" src="img/arrow.png" style="position:absolute;bottom:5%;left:calc(50% - 15px);z-index:2;"> 
+				<!--content-->
+				<div id="main" style="width:100%;height:200%;position:absolute;top:0px;left:0px;z-index:1;">
+					<div id="content_1" class="contentitem" style="background-image:url('img/i1.jpg');">
+						<img class="innertext" src="img/i1_t.png" style="width:100%;top:68.4%;left:0;">
+					</div>
+					<div id="content_2" class="contentitem" style="background:url('img/i2.jpg');background-size:100% auto;">
+						<img class="innertext" src="img/i2_t.png" style="left:8.6%;top:21%;"/>
+					</div>
+					<div id="content_3" class="contentitem" style="background:url('img/i3.jpg');background-size:100%;auto;">
+						<img class="innertext" src="img/i3_t.png" style="left:31%;top:17%;"/>
+					</div>
+					<div id="content_4" class="contentitem" style="background:url('img/i4.jpg');background-size:100%;auto;">
+						<img class="innertext" src="img/i4_t.png" style="left:52%;top:27%;"/>
+						<img class="innertext" id="img4_1" src="img/i4_1.png" style="left:0px;top:73%;opacity:0;"/>
+					</div>
+					<div id="content_5" class="contentitem" style="background:url('img/i5.jpg');background-size:100%;auto;">
+						<img class="innertext" src="img/i5_t.png" style="left:9%;top:18%;"/>
+						<img id="img5_1" src="img/i5_1.png" style="opacity:0;width:100%;"/>
+						<div id="div5_1" style="position:absolute;width:38%;height:60%;z-index:2;left:50%;top:21%;"></div>
+					</div>
+					<div id="content_6" class="contentitem" style="background:url('img/i6.jpg');background-size:100%;auto;">
+						<img class="innertext" src="img/i6_t.png" style="left:66%;top:20%;"/>
+						<img id="img_60" src="img/i6_1.jpg" style="position:absolute;top:0px;left:0px;opacity:0;width:100%;" />
+						<img id="img_61" src="img/i6_1.png" style="position:absolute;top:0px;left:0px;opacity:0;width:100%;z-index:2;" />
+					</div>
+					
+					<div id="content_7" class="contentitem" style="background:url('img/formbg.jpg');background-size:100% auto;">
+						<form id="form" method="post" action="form_endpoint" url="#" style="width:100%;height:100%;">
+							<!--name-->
+							<input type="text" id="uname" name="uname" style="position:absolute;width:24%;height:7%;left:21%;top:34%;color:#fff;background:none;border:none;"/>
+							<!--mobile-->
+							<input type="text" id="mobile" name="mobile" style="position:absolute;width:25%;height:7%;left:65.5%;top:46%;color:#fff;background:none;border:none;"/>
+							<!--province-->
+							<select id="province" name="province" style="position:absolute;left:21.12%;top:46%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;">
+								<option value="0">请选择</option>
+								<option value="1">上海市</option>
+							</select>
+							<!--city-->
+							<select id="city" name="city" style="position:absolute;left:34.68%;top:46%;width:11.4%;height:8.75%;color:#fff;background:none;border:none;">
+								<option value="0">请选择</option>
+								<option value="1">上海市</option>
+							</select>
+							<!--sex radio-->
+							<img id="sexmale" src="img/btnrd_s.png" style="position:absolute;top:34.7%;left:65%"/>
+							<img id="sexfemale" class="" src="img/btnrd_u.png" style="position:absolute;top:34.7%;left:76%"/>
+							<input id="sex" type="hidden" name="sex" value="1" />
+							<!--submit button-->
+							<input id="submitbtn" type="submit" value="" style="position:absolute;width:48%;height:11.8%;left:8.5%;top:76.7%;opacity:0;"/>
+							<!--reset button-->
+							<input id="resetbtn" type="button" style="position:absolute;width:33%;height:11.8%;left:58%;top:76.7%;opacity:0;"/>
+							<!--share button-->
+							<div id="shareinform" style="width:68px;height:48px;position:absolute;top:0;left:0;"></div>
+						</form>
+					</div>
+					<div id="content_8" class="contentitem">
+						<div style="width:84%;height:50%;background:url('img/endbg.png') no-repeat center center;position:absolute;left:8%;top:25%;">
+							<!--share button-->
+							<div id="snsbtn" style="position:absolute;left:1%;top:35.8%;width:57%;height:22.8%;"></div>
+							<!--return back button-->
+							<div id="returnbtn" style="position:absolute;left:60%;top:35.8%;width:40%;height:22.8%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jgestures.min.js"></script>
+		<script type="text/javascript">
+			var WH=$("html").height();
+			var WW=$("html").width();
+			
+			var RH=(WW/568)*WH;
+			var DIFFH=(WH-RH);
+			
+			$("#outercon").height(RH).css("top",Math.round(DIFFH/2));
+			$("#main img.innertext").load(function(){
+				this.height=this.height*(WW/568);
+			})
+			
+			
+			var CP=1;
+			var colorbg=0;
+			var isAni=false;
+			$("#content").bind("swiperightup",swipermove).bind("swipeleftup",swipermove).bind("swipeup",swipermove);
+			$("body").bind("touchmove",function(e){e.stopPropagation();e.preventDefault();});
+			$(window).scrollTop(0).bind("orientationEvent",function(){
+				$(this).scrollTop(0);
+			});
+			
+			function swipermove(){
+				if(!isAni){
+					CP++;
+					if(CP>8){
+						return;
+					}
+					isAni=true;
+					$("#main").stop().animate({"top":(CP-1)*-RH},function(){
+						isAni=false;
+						if(CP==2){
+							$("#content_2").append($("<img id=\"img_2\" src=\"img/i2_1.jpg\"  style=\"position:absolute;top:0px;left:0px;width:100%;\" />").css("opacity",0)).bind("tapone",function(){
+								var tar=$("#img_2");
+								if(tar.data("s")){
+									tar.data("s",false);
+									tar.stop().animate({"opacity":0});
+								}else{
+									tar.data("s",true);
+									tar.stop().animate({"opacity":1});
+								}
+							});
+						}else if(CP==4){
+							setTimeout(function(){$("#img4_1").animate({"opacity":1})},200);
+						}else if(CP==5){
+							setTimeout(function(){
+								$("#img5_1").animate({"opacity":1});
+								$("#div5_1").bind("tapone",function(){
+									var tar=$("#img5_1");
+									if(tar.data("s")){
+										tar.data("s",false);
+										tar.stop().animate({"opacity":1});
+									}else{
+										tar.data("s",true);
+										tar.stop().animate({"opacity":0});
+									}
+								});
+							},200);
+						}else if(CP==6){
+							$("#img_60").css("opacity",1);
+							$("#img_61").animate({"opacity":1});
+							colorbg=1;
+							$("#content_6").bind("tapone",function(){
+								colorbg++;
+								if(colorbg>4){
+									colorbg=0;
+								}
+								if(colorbg){
+									$("#img_61").stop().animate({"opacity":0},function(){
+										$("#img_61").attr("src","img/i6_"+colorbg+".png").animate({"opacity":1});
+									})
+								}else{
+									$("#img_61").stop().animate({"opacity":0},function(){})
+								}
+							})
+						}else if(CP==7){
+							$("#logotext,#btns,#arrow").hide();
+							$("#sexmale").bind("tapone",function(){
+								this.src="img/btnrd_s.png";
+								$("#sexfemale").attr("src","img/btnrd_u.png")
+								$("#sex").attr("value",1);
+							});
+							$("#sexfemale").bind("tapone",function(){
+								this.src="img/btnrd_s.png";
+								$("#sexmale").attr("src","img/btnrd_u.png")
+								$("#sex").attr("value",0);
+							});
+							$("#submitbtn").bind("tapone",function(){
+								
+							});
+							$("#resetbtn").bind("tapone",function(){
+								$("#uname,#mobile").attr("value","");
+								$("#proveice option").first().attr("selected",true);
+								$("#city option").first().attr("selected",true);
+								$("#sexmale").trigger("tapone")
+							});
+							$("#shareinform").bind("tapone",function(){alert("share")})
+						}else if(CP==8){
+							$("#logotext").show();
+							$("#snsbtn").bind("tapone",function(){
+								alert("share")
+							});
+							
+							$("#returnbtn").bind("tapone",function(){
+								$("#content_2").unbind();
+								$("#img_2").unbind().remove();
+								
+								$("#img4_1").css({"opacity":0});
+								$("#img5_1").css({"opacity":0});
+								$("#div5_1").unbind();
+								$("#img_60,#img_61").css("opacity",0);
+								$("#content_6").unbind();
+								$("#resetbtn").trigger("tapone").unbind();
+								$("#shareinform").unbind();
+								$("#snsbtn").unbind();
+								$(this).unbind();
+								
+
+								$("#content_8").animate({"opacity":0},function(){
+									$("#main").css("top",0);
+									$(this).css("opacity",1);
+									isAni=true;
+									$("#content_1").css("opacity",0).animate({"opacity":1},function(){
+										isAni=false;
+									});
+									$("#logotext,#btns,#arrow").show();
+									CP=1;
+								})
+							})
+						}
+					});
+				}
+			}
+		</script>
+	</body>
+</html>

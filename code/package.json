@@ -1,0 +1,31 @@
+{
+  "name": "benz_c-class",
+  "version": "0.0.2-3",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "express": "~4.2.0",
+    "express-device": "~0.3.10",
+    "express-validator": "~2.3.0",
+    "jade": "~1.3.0",
+    "memory-cache": "~0.0.5",
+    "mobile-detect": "^0.4.0",
+    "mongodb": "~1.4.7",
+    "mongoose": "~3.8.13",
+    "morgan": "~1.0.0",
+    "socket.io": "1.0.6",
+    "static-favicon": "~1.0.0",
+    "stylus": "0.42.3",
+    "swig": "~1.4.1",
+    "useragent": "^2.0.9"
+  },
+  "subdomain": "c-class",
+  "engines": {
+    "node": "0.10.x"
+  }
+}

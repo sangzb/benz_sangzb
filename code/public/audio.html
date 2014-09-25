@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script type="text/javascript" src="js/audiojs/audio.min.js"></script>
+<script>
+		audiojs.events.ready(function() {
+			audiojs.createAll();
+		});
+		
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+			body{ background:#000; height:100%; width:100%;}
+			.audiojs .play { background:url(images/music-off.png) no-repeat;}         
+			.audiojs .loading { background:url(js/audiojs/player-graphics.gif)  -2px -31px no-repeat;}         
+			.audiojs .error { background:url(js/audiojs/player-graphics.gif)  -2px -61px no-repeat;}         
+			.audiojs .pause {  background:url(images/music.png) no-repeat;}       
+
+
+</style>
+<title></title>
+
+</head>
+
+<body>
+<audio src="images/bg.mp3" preload="auto" id="audio" loop></audio>
+</body>
+</html>
