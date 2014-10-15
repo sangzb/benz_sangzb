@@ -9,6 +9,17 @@ var MobileDetect = require('mobile-detect');
 var swig = require('swig');
 var fileSystem = require('fs');
 
+//for weixin api proxy
+var httpProxy = require('http-proxy');
+var apiProxy = httpProxy.createProxyServer();
+apiProxy.on("error",function(err, req, res){
+	res.writeHead(500, {
+    'Content-Type': 'text/plain'
+  });
+
+  res.end('Something went wrong. And we are reporting a custom error message.');
+});
+
 var sioserverIP=process.argv[2];
 if(process.env.NODE_ENV === 'production')
 {
@@ -308,6 +319,29 @@ app.get('/dd', function (req,res){
     }
 );
 
+//wechat api
+app.all("/wechat", function(req, res){ 
+	console.log("push forward message");
+	apiProxy.web(req, res, { target: 'http://localhost:3000' });	
+});
+app.all("/oauth_response", function(req, res){ 
+	console.log("get oauth resquest");
+	apiProxy.web(req, res, { target: 'http://localhost:3000' });
+});
+/*
+app.post("/wechat", function(req, res){ 
+	console.log("push forward message");
+	apiProxy.web(req, res, { target: 'http://localhost:3000' });	
+});
+app.get("/wechat_oauth", function(req, res){ 
+	console.log("push forward message");
+	apiProxy.web(req, res, { target: 'http://localhost:3000' });
+});
+app.post("/wechat_oauth", function(req, res){ 
+	console.log("push forward message");
+	apiProxy.web(req, res, { target: 'http://localhost:3000' });
+});
+*/
 /*
 app.post('/form_endpoint',function (req, res) {
 	var leadsEntity = new leadsModel({
